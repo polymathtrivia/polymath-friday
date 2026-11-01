@@ -1,0 +1,817 @@
+{
+ "edition": "2026-10-30",
+ "title": "Friday 50",
+ "week": "24–30 October 2026",
+ "questions": [
+  {
+   "c": "news",
+   "s": "World news",
+   "d": 1,
+   "q": "Two high-speed trains collided near the town of Urda on Wednesday, killing at least 68 people. In which country?",
+   "a": "Spain",
+   "w": [
+    "Italy",
+    "Portugal",
+    "France"
+   ],
+   "alt": [],
+   "f": "A Renfe train hit a stationary Iryo train in Toledo province, south of Madrid, and the nation declared official mourning.",
+   "mc": 1,
+   "src": "https://www.rte.ie/news/world/2026/1028/1597051-spain-train-crash/"
+  },
+  {
+   "c": "news",
+   "s": "World news",
+   "d": 1,
+   "q": "Cyclone Arnab crossed the coast on Wednesday after nearly 100,000 people were evacuated. Which country did it hit?",
+   "a": "India",
+   "w": [
+    "Bangladesh",
+    "Sri Lanka",
+    "Myanmar"
+   ],
+   "alt": [],
+   "f": "The very severe cyclonic storm made landfall in Andhra Pradesh, with Odisha also evacuating residents.",
+   "mc": 1,
+   "src": "https://euronews.com/2026/10/28/india-evacuates-tens-of-thousands-as-cyclone-arnab-makes-landfall"
+  },
+  {
+   "c": "news",
+   "s": "World news",
+   "d": 3,
+   "q": "Congo's Ebola outbreak passed 10,000 confirmed cases this week. Which rare species of Ebola virus is driving it?",
+   "a": "Bundibugyo",
+   "w": [
+    "Zaire",
+    "Sudan",
+    "Taï Forest"
+   ],
+   "alt": [],
+   "f": "The outbreak, announced in mid-May, has been linked to almost 4,900 deaths.",
+   "mc": 1,
+   "src": "https://www.dailymaverick.co.za/article/2026-10-27-congos-ebola-cases-surpass-10000-as-fears-grow-of-wider-african-spread.md"
+  },
+  {
+   "c": "news",
+   "s": "World news",
+   "d": 2,
+   "q": "Which nuclear watchdog chief told the UN Security Council there's no sign Iran is rebuilding its bombed nuclear sites?",
+   "a": "Rafael Grossi",
+   "w": [
+    "Mohamed ElBaradei",
+    "Yukiya Amano",
+    "António Guterres"
+   ],
+   "alt": [],
+   "f": "The IAEA head also said about 440kg of highly enriched uranium remains unaccounted for.",
+   "mc": 1,
+   "src": "https://www.arabnews.pk/middle-east/no-sign-iran-is-rebuilding-nuclear-sites-but-440-kg-of-uranium-unaccounted-for-un-watchdog-says-3005428"
+  },
+  {
+   "c": "news",
+   "s": "Tech",
+   "d": 1,
+   "q": "Which AI company publicly filed its paperwork this week for a US sharemarket listing under the proposed ticker ANT?",
+   "a": "Anthropic",
+   "w": [
+    "OpenAI",
+    "xAI",
+    "Mistral AI"
+   ],
+   "alt": [],
+   "f": "The S-1 filing landed on Monday 26 October US time and showed revenue of US$19.7 billion for the year to June.",
+   "mc": 1,
+   "src": "https://www.iposcoop.com/the-ipo-buzz-anthropic-ant-proposed-files-its-s-1/"
+  },
+  {
+   "c": "news",
+   "s": "Tech",
+   "d": 2,
+   "q": "Apple unveiled its first touchscreen laptop this week. Which Mac line got it?",
+   "a": "MacBook Pro",
+   "w": [
+    "MacBook Air",
+    "iMac",
+    "Mac mini"
+   ],
+   "alt": [],
+   "f": "The 14- and 16-inch models run M5 Pro or M5 Max chips and go on sale on 6 November.",
+   "mc": 1,
+   "src": "https://www.techcompanynews.com/ai-bill-comes-due-microsoft-alphabet-apple-touchscreen-macbook/"
+  },
+  {
+   "c": "news",
+   "s": "Science",
+   "d": 1,
+   "q": "University of Bonn researchers found a REM-like sleep stage in which Australian creature?",
+   "a": "A jumping spider",
+   "w": [
+    "A platypus",
+    "An echidna",
+    "A bearded dragon"
+   ],
+   "alt": [],
+   "f": "The species, Portia fimbriata, twitched its legs and moved its eyes during one of two distinct sleep stages.",
+   "mc": 1,
+   "src": "https://sciencedaily.com/releases/2026/10/261026225555.htm"
+  },
+  {
+   "c": "news",
+   "s": "Science",
+   "d": 2,
+   "q": "Blue Moon, one of the two lunar landers the Artemis III crew is set to test, is built by which company?",
+   "a": "Blue Origin",
+   "w": [
+    "SpaceX",
+    "Boeing",
+    "Lockheed Martin"
+   ],
+   "alt": [],
+   "f": "NASA's Artemis III is planned for mid-2027, with crew working with both Blue Moon and SpaceX's Starship.",
+   "mc": 1,
+   "src": "https://time.com/article/2026/10/28/nasa-artemis-III-complex-mission"
+  },
+  {
+   "c": "news",
+   "s": "Business",
+   "d": 3,
+   "q": "ASIC told Senate estimates it is examining the collapse of Firmus's planned $44 billion float. What does Firmus build?",
+   "a": "AI data centres",
+   "w": [
+    "Lithium refineries",
+    "Electric cars",
+    "Wind turbines"
+   ],
+   "alt": [],
+   "f": "The Tasmanian-based company calls its facilities 'AI factories' and pulled its ASX listing earlier in October.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622"
+  },
+  {
+   "c": "news",
+   "s": "Business",
+   "d": 2,
+   "q": "The US Federal Reserve held rates steady this week. Who chairs the Fed?",
+   "a": "Kevin Warsh",
+   "w": [
+    "Jerome Powell",
+    "Janet Yellen",
+    "Kevin Hassett"
+   ],
+   "alt": [],
+   "f": "The Fed kept its target range at 3.75–4.00% in a 10–2 vote, with two members preferring a hike.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622"
+  },
+  {
+   "c": "news",
+   "s": "Business",
+   "d": 1,
+   "q": "Microsoft's cloud computing platform grew revenue 48% in the latest quarter. What is it called?",
+   "a": "Azure",
+   "w": [
+    "AWS",
+    "iCloud",
+    "Google Cloud"
+   ],
+   "alt": [],
+   "f": "It was the first time Microsoft disclosed the platform's revenue in dollars: about US$33.2 billion.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622"
+  },
+  {
+   "c": "news",
+   "s": "Australia",
+   "d": 3,
+   "q": "Senate estimates heard this week that the Snowy 2.0 hydro project is delayed again. What is its latest estimated cost?",
+   "a": "$22–25 billion",
+   "w": [
+    "$2–3 billion",
+    "$5–6 billion",
+    "$50–55 billion"
+   ],
+   "alt": [],
+   "f": "Officials also flagged another year's delay for the pumped-hydro scheme.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-27/federal-politics-live-blog-oct-27/107312378"
+  },
+  {
+   "c": "news",
+   "s": "Australia",
+   "d": 2,
+   "q": "Changes revealed at Senate estimates will cut second- and third-year places for which visa?",
+   "a": "Working holiday visa",
+   "w": [
+    "Student visa",
+    "Partner visa",
+    "Skilled independent visa"
+   ],
+   "alt": [],
+   "f": "Third-year places are falling sharply, from 31,000 to 5,000.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-27/federal-politics-live-blog-oct-27/107312378"
+  },
+  {
+   "c": "news",
+   "s": "Australia",
+   "d": 2,
+   "q": "Anthony Albanese is heading to the Commonwealth Heads of Government Meeting. Which Caribbean nation is hosting it?",
+   "a": "Antigua and Barbuda",
+   "w": [
+    "Jamaica",
+    "Barbados",
+    "Trinidad and Tobago"
+   ],
+   "alt": [],
+   "f": "CHOGM runs from 1 to 4 November in St John's.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/federal-politics-live-blog-oct-29/107320104"
+  },
+  {
+   "c": "news",
+   "s": "World news",
+   "d": 3,
+   "q": "At CHOGM, Albanese plans talks with the UK prime minister. Who holds that job?",
+   "a": "Andy Burnham",
+   "w": [
+    "Keir Starmer",
+    "Kemi Badenoch",
+    "Rishi Sunak"
+   ],
+   "alt": [],
+   "f": "He took office in July 2026 after Keir Starmer stood down.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/federal-politics-live-blog-oct-29/107320104"
+  },
+  {
+   "c": "news",
+   "s": "Queensland",
+   "d": 1,
+   "q": "By Monday, Brisbane had recorded about 170mm of rain for October. How does that compare with the month's average?",
+   "a": "About double",
+   "w": [
+    "About half",
+    "About the same",
+    "About five times"
+   ],
+   "alt": [],
+   "f": "Brisbane's October average is 87mm, and parts of the Sunshine Coast were heading for an October record.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-27/south-east-qld-weather-october-rainfall-nearing-records/107310704"
+  },
+  {
+   "c": "news",
+   "s": "Australia",
+   "d": 3,
+   "q": "Legislation debated in the House this week would reserve up to what share of gas exports for domestic use?",
+   "a": "20%",
+   "w": [
+    "5%",
+    "50%",
+    "75%"
+   ],
+   "alt": [],
+   "f": "The government says it would boost supply for manufacturers and ease household gas prices.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/federal-politics-live-blog-oct-29/107320104"
+  },
+  {
+   "c": "news",
+   "s": "Australia",
+   "d": 3,
+   "q": "The resources minister called it 'unacceptable' that China-linked investors are defying orders to sell out of Perth's Northern Minerals. What does the company focus on?",
+   "a": "Rare earths",
+   "w": [
+    "Lithium",
+    "Uranium",
+    "Iron ore"
+   ],
+   "alt": [],
+   "f": "Canberra has ordered several China-linked shareholders to divest on national-interest grounds.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/federal-politics-live-blog-oct-29/107320104"
+  },
+  {
+   "c": "news",
+   "s": "Australia",
+   "d": 3,
+   "q": "Which Labor MP floated price caps on basics like bread and milk this week?",
+   "a": "Ed Husic",
+   "w": [
+    "Jim Chalmers",
+    "Daniel Mulino",
+    "Tony Burke"
+   ],
+   "alt": [],
+   "f": "The government pointed to the Grocery Code of Conduct and the ACCC instead, and the idea looks unlikely to go further.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/federal-politics-live-blog-oct-29/107320104"
+  },
+  {
+   "c": "news",
+   "s": "World news",
+   "d": 2,
+   "q": "On what date next week are the US midterm elections held?",
+   "a": "3 November",
+   "w": [
+    "1 November",
+    "5 November",
+    "10 November"
+   ],
+   "alt": [],
+   "f": "Midterms fall on the Tuesday after the first Monday in November.",
+   "mc": 1,
+   "src": "https://www.yahoo.com/news/politics/article/the-2026-midterms-are-next-week-which-party-has-a-better-chance-of-winning-heres-what-the-latest-polls-say-155319308.html"
+  },
+  {
+   "c": "news",
+   "s": "World news",
+   "d": 3,
+   "q": "Bulgaria's presidential race goes to a runoff on Sunday. Which candidate topped the first round?",
+   "a": "Iliana Iotova",
+   "w": [
+    "Andrey Gyurov",
+    "Rumen Radev",
+    "Boyko Borissov"
+   ],
+   "alt": [],
+   "f": "She won about 35% to Gyurov's 32% on a record-low turnout.",
+   "mc": 1,
+   "src": "https://www.thestar.com.my/news/world/2026/10/27/explainer-why-bulgaria039s-presidential-election-heads-for-runoff"
+  },
+  {
+   "c": "news",
+   "s": "Business",
+   "d": 1,
+   "q": "Markets expect an RBA rate rise at next Tuesday's meeting. Which famous event falls on that same day?",
+   "a": "The Melbourne Cup",
+   "w": [
+    "The Cox Plate",
+    "The Caulfield Cup",
+    "The Golden Slipper"
+   ],
+   "alt": [],
+   "f": "Markets were pricing about an 85% chance of a hike on 3 November after hot inflation figures.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622"
+  },
+  {
+   "c": "news",
+   "s": "Numbers",
+   "d": 1,
+   "q": "Australia's annual inflation rate for the year to September was announced this week. What was it?",
+   "a": "4.3%",
+   "w": [
+    "2.8%",
+    "3.4%",
+    "5.6%"
+   ],
+   "alt": [],
+   "f": "It was up from 4.0% in August, with housing and transport the biggest drivers.",
+   "mc": 1,
+   "src": "https://www.abs.gov.au/media-centre/media-releases/cpi-rose-43-year-september-2026"
+  },
+  {
+   "c": "news",
+   "s": "Numbers",
+   "d": 3,
+   "q": "By how much did automotive fuel prices rise in September alone, according to the ABS?",
+   "a": "9.4%",
+   "w": [
+    "1.2%",
+    "4.1%",
+    "19.4%"
+   ],
+   "alt": [],
+   "f": "That followed a 14.8% jump in August, driven by higher world oil prices.",
+   "mc": 1,
+   "src": "https://www.abs.gov.au/media-centre/media-releases/cpi-rose-43-year-september-2026"
+  },
+  {
+   "c": "news",
+   "s": "Numbers",
+   "d": 2,
+   "q": "What is the RBA's current cash rate, ahead of next week's decision?",
+   "a": "4.60%",
+   "w": [
+    "3.60%",
+    "4.10%",
+    "5.35%"
+   ],
+   "alt": [],
+   "f": "CBA expects a 25-basis-point rise to 4.85%.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622"
+  },
+  {
+   "c": "news",
+   "s": "Numbers",
+   "d": 2,
+   "q": "The Federal Court ordered Star Entertainment to pay what penalty for anti-money-laundering breaches?",
+   "a": "$260 million",
+   "w": [
+    "$26 million",
+    "$400 million",
+    "$1.3 billion"
+   ],
+   "alt": [],
+   "f": "AUSTRAC had sought $400 million, and Star will pay in four instalments over 19 months.",
+   "mc": 1,
+   "src": "https://thenightly.com.au/business/the-star-entertainment-group-judge-to-set-fate-of-casino-giant-after-400m-lawsuit-c-23080963"
+  },
+  {
+   "c": "news",
+   "s": "Numbers",
+   "d": 3,
+   "q": "Brent crude was trading at roughly what price per barrel midweek?",
+   "a": "US$114",
+   "w": [
+    "US$64",
+    "US$84",
+    "US$154"
+   ],
+   "alt": [],
+   "f": "Higher oil prices have flowed through to Australian petrol bowsers and the inflation figures.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622"
+  },
+  {
+   "c": "pol",
+   "s": "Politics",
+   "d": 3,
+   "q": "Which former army chief's bloc challenged Benjamin Netanyahu in Tuesday's Israeli election?",
+   "a": "Gadi Eisenkot",
+   "w": [
+    "Benny Gantz",
+    "Yair Lapid",
+    "Naftali Bennett"
+   ],
+   "alt": [],
+   "f": "Neither bloc reached the 61 seats needed, so Netanyahu stays caretaker prime minister for now.",
+   "mc": 1,
+   "src": "https://www.10things.news/p/10-things-global-news-29th-october-e6a"
+  },
+  {
+   "c": "pol",
+   "s": "Politics",
+   "d": 1,
+   "q": "Lula da Silva beat Flávio Bolsonaro in Brazil's runoff. Which term as president will this be for Lula?",
+   "a": "His fourth",
+   "w": [
+    "His second",
+    "His third",
+    "His fifth"
+   ],
+   "alt": [],
+   "f": "Lula, who turned 81 this week, won with just over 51% of the vote.",
+   "mc": 1,
+   "src": "https://www.stlpr.org/npr/2026-10-25/brazils-left-wing-president-lula-elected-for-fourth-term"
+  },
+  {
+   "c": "pol",
+   "s": "Politics",
+   "d": 1,
+   "q": "Aleksandar Vučić conceded defeat to a student-led movement in which country's parliamentary election?",
+   "a": "Serbia",
+   "w": [
+    "Croatia",
+    "Hungary",
+    "Montenegro"
+   ],
+   "alt": [],
+   "f": "The student list was projected to win 135–140 of the parliament's 250 seats.",
+   "mc": 1,
+   "src": "https://www.thestar.com.my/news/world/2026/10/26/serbia039s-vucic-concedes-defeat-to-student-led-movement-in-parliamentary-election"
+  },
+  {
+   "c": "pol",
+   "s": "Queensland politics",
+   "d": 2,
+   "q": "Queensland's 'Breach Bail, Go to Jail' bill sets what minimum jail term for serious repeat offenders who reoffend on bail?",
+   "a": "12 months",
+   "w": [
+    "3 months",
+    "6 months",
+    "5 years"
+   ],
+   "alt": [],
+   "f": "The bill also makes breaching bail a standalone offence and toughens the bail test.",
+   "mc": 1,
+   "src": "https://statements.qld.gov.au/statements/106300"
+  },
+  {
+   "c": "lng",
+   "s": "Words",
+   "d": 2,
+   "q": "Calls for fuel 'excise' relief continued in parliament this week. What is an excise?",
+   "a": "A tax on particular goods such as fuel or alcohol",
+   "w": [
+    "A subsidy paid to motorists",
+    "A tariff on all imports",
+    "A refund for business travel"
+   ],
+   "alt": [],
+   "f": "Excise is charged on certain domestically produced goods, with fuel excise one of the biggest earners.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/federal-politics-live-blog-oct-29/107320104"
+  },
+  {
+   "c": "lng",
+   "s": "Words",
+   "d": 1,
+   "q": "Benjamin Netanyahu stays on as 'caretaker' prime minister. What does caretaker mean here?",
+   "a": "Holding office temporarily until a new government forms",
+   "w": [
+    "Elected unopposed",
+    "Responsible only for defence",
+    "Appointed for life"
+   ],
+   "alt": [],
+   "f": "Caretaker governments usually avoid major new decisions until a new government is formed.",
+   "mc": 1,
+   "src": "https://www.10things.news/p/10-things-global-news-29th-october-e6a"
+  },
+  {
+   "c": "lng",
+   "s": "Words",
+   "d": 3,
+   "q": "'Embargo', a word often seen in trade news, comes from which language?",
+   "a": "Spanish",
+   "w": [
+    "Arabic",
+    "Dutch",
+    "Portuguese"
+   ],
+   "alt": [],
+   "f": "It comes from the Spanish 'embargar', meaning to seize or restrain.",
+   "mc": 1,
+   "src": "https://www.etymonline.com/word/embargo"
+  },
+  {
+   "c": "lng",
+   "s": "Words",
+   "d": 2,
+   "q": "The Ebola virus, back in the news this week, takes its name from what?",
+   "a": "A river",
+   "w": [
+    "A doctor",
+    "A village",
+    "A mountain"
+   ],
+   "alt": [],
+   "f": "It is named after the Ebola River in what is now the Democratic Republic of the Congo.",
+   "mc": 1,
+   "src": "https://www.dailymaverick.co.za/article/2026-10-27-congos-ebola-cases-surpass-10000-as-fears-grow-of-wider-african-spread.md"
+  },
+  {
+   "c": "lng",
+   "s": "Words",
+   "d": 2,
+   "q": "Fire salamanders were found to glow green and cyan under UV light. Which spelling is correct?",
+   "a": "Fluorescent",
+   "w": [
+    "Flourescent",
+    "Fluoresent",
+    "Flurescent"
+   ],
+   "alt": [],
+   "f": "The word comes from fluorite, the mineral in which the effect was first studied.",
+   "mc": 1,
+   "src": "https://www.sciencedaily.com/news/top/science/"
+  },
+  {
+   "c": "mat",
+   "s": "Maths",
+   "d": 1,
+   "q": "Brisbane had about 170mm of rain by Monday, against an October average of 87mm. How many millimetres above average is that?",
+   "a": "83",
+   "w": [
+    "73",
+    "93",
+    "257"
+   ],
+   "alt": [
+    "83mm",
+    "83 mm"
+   ],
+   "f": "170 − 87 = 83.",
+   "mc": 0,
+   "src": "https://www.abc.net.au/news/2026-10-27/south-east-qld-weather-october-rainfall-nearing-records/107310704"
+  },
+  {
+   "c": "mat",
+   "s": "Maths",
+   "d": 1,
+   "q": "Star must pay its $260 million penalty in four equal instalments. How many millions is each instalment?",
+   "a": "65",
+   "w": [
+    "60",
+    "75",
+    "130"
+   ],
+   "alt": [
+    "$65 million",
+    "65 million",
+    "$65m"
+   ],
+   "f": "260 ÷ 4 = 65.",
+   "mc": 0,
+   "src": "https://thenightly.com.au/business/the-star-entertainment-group-judge-to-set-fate-of-casino-giant-after-400m-lawsuit-c-23080963"
+  },
+  {
+   "c": "mat",
+   "s": "Maths",
+   "d": 2,
+   "q": "Second-year working holiday places are being cut from 57,000 to 45,000. How many fewer places is that?",
+   "a": "12000",
+   "w": [
+    "11000",
+    "13000",
+    "21000"
+   ],
+   "alt": [
+    "12,000",
+    "12 000"
+   ],
+   "f": "57,000 − 45,000 = 12,000.",
+   "mc": 0,
+   "src": "https://www.abc.net.au/news/2026-10-27/federal-politics-live-blog-oct-27/107312378"
+  },
+  {
+   "c": "mat",
+   "s": "Maths",
+   "d": 2,
+   "q": "Kimi Antonelli leads the F1 title race with five Grands Prix left. At 25 points for a win, what's the most a driver can score from those five races (ignoring sprints)?",
+   "a": "125",
+   "w": [
+    "100",
+    "120",
+    "150"
+   ],
+   "alt": [],
+   "f": "5 × 25 = 125, just two more than Antonelli's 123-point lead.",
+   "mc": 0,
+   "src": "https://www.aljazeera.com/sports/2026/10/26/kimi-antonelli-wins-us-grand-prix-closes-in-on-f1-championship"
+  },
+  {
+   "c": "spo",
+   "s": "Sport",
+   "d": 2,
+   "q": "Which horse won the 150th Cox Plate, the first one run at Flemington?",
+   "a": "Cosmic Crusader",
+   "w": [
+    "Via Sistina",
+    "Sir Delius",
+    "Birdman"
+   ],
+   "alt": [],
+   "f": "The West Australian stayer, ridden by William Pike, collected the $4 million winner's prize.",
+   "mc": 1,
+   "src": "https://ground.news/article/cosmic-crusader-wins-6-million-cox-plate"
+  },
+  {
+   "c": "spo",
+   "s": "Sport",
+   "d": 1,
+   "q": "Who won Formula 1's United States Grand Prix in Austin?",
+   "a": "Kimi Antonelli",
+   "w": [
+    "George Russell",
+    "Oscar Piastri",
+    "Max Verstappen"
+   ],
+   "alt": [],
+   "f": "The 20-year-old Italian moved to the brink of his first world title, with Oscar Piastri seventh.",
+   "mc": 1,
+   "src": "https://www.aljazeera.com/sports/2026/10/26/kimi-antonelli-wins-us-grand-prix-closes-in-on-f1-championship"
+  },
+  {
+   "c": "spo",
+   "s": "Sport",
+   "d": 2,
+   "q": "Who scored a century in Australia's first innings of 429 in the third Test at Newlands?",
+   "a": "Josh Inglis",
+   "w": [
+    "Steve Smith",
+    "Cameron Green",
+    "Travis Head"
+   ],
+   "alt": [],
+   "f": "His 102 helped Australia to a 100-run first-innings lead in the series decider.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-10-29/test-cricket-live-updates-south-africa-vs-australia-cape-town/107324412"
+  },
+  {
+   "c": "spo",
+   "s": "Sport",
+   "d": 3,
+   "q": "Which team won a 12-inning World Series Game 4 to avoid being swept by the Milwaukee Brewers?",
+   "a": "Tampa Bay Rays",
+   "w": [
+    "Cleveland Guardians",
+    "Los Angeles Dodgers",
+    "Toronto Blue Jays"
+   ],
+   "alt": [],
+   "f": "Pinch-hitter Ben Williamson drove in the winning run in a 4–3 victory.",
+   "mc": 1,
+   "src": "https://www.mlb.com/news/rays-win-world-series-game-4-2026"
+  },
+  {
+   "c": "mus",
+   "s": "Music",
+   "d": 2,
+   "q": "'Housewife' debuted at No. 1 on the ARIA singles chart. Who sings it?",
+   "a": "Tate McRae",
+   "w": [
+    "Olivia Rodrigo",
+    "Sabrina Carpenter",
+    "Olivia Dean"
+   ],
+   "alt": [],
+   "f": "It's the Canadian singer's first ARIA No. 1 single.",
+   "mc": 1,
+   "src": "https://www.aria.com.au/charts/singles-chart/2026-10-26"
+  },
+  {
+   "c": "mus",
+   "s": "Music",
+   "d": 2,
+   "q": "Fontaines D.C. debuted at No. 1 on the ARIA albums chart with Dopamine Chamber. Which country is the band from?",
+   "a": "Ireland",
+   "w": [
+    "England",
+    "Scotland",
+    "Wales"
+   ],
+   "alt": [],
+   "f": "Dopamine Chamber is the band's fifth studio album and also topped the UK chart.",
+   "mc": 1,
+   "src": "https://www.officialcharts.com/chart-news/fontaines-dc-dopamine-chamber-number-1-album/"
+  },
+  {
+   "c": "mus",
+   "s": "Music",
+   "d": 3,
+   "q": "Which Australian act's album No Bad Memories debuted at No. 5 on the ARIA albums chart?",
+   "a": "The Avalanches",
+   "w": [
+    "The Rubens",
+    "Tame Impala",
+    "Rüfüs Du Sol"
+   ],
+   "alt": [],
+   "f": "The Rubens' Group Therapy debuted one place behind it, at No. 6.",
+   "mc": 1,
+   "src": "https://www.aria.com.au/charts/albums-chart/2026-10-26"
+  },
+  {
+   "c": "fil",
+   "s": "Pop culture",
+   "d": 1,
+   "q": "Clayface opened at No. 1 at the US box office. Which comic-book universe is it from?",
+   "a": "DC",
+   "w": [
+    "Marvel",
+    "Image",
+    "Dark Horse"
+   ],
+   "alt": [],
+   "f": "The DC Studios film took about US$24 million in its opening weekend.",
+   "mc": 1,
+   "src": "https://www.clickondetroit.com/entertainment/2026/10/25/you-can-see-everything-surges-with-195m-at-box-office-clayface-takes-no-1/"
+  },
+  {
+   "c": "fil",
+   "s": "Pop culture",
+   "d": 2,
+   "q": "Nathan Fielder co-directed the documentary You Can See Everything, a box-office hit. Who is it about?",
+   "a": "Elizabeth Holmes",
+   "w": [
+    "Sam Bankman-Fried",
+    "Adam Neumann",
+    "Martin Shkreli"
+   ],
+   "alt": [],
+   "f": "The A24 film took US$19.5 million in its first weekend of wide release.",
+   "mc": 1,
+   "src": "https://www.clickondetroit.com/entertainment/2026/10/25/you-can-see-everything-surges-with-195m-at-box-office-clayface-takes-no-1/"
+  },
+  {
+   "c": "fil",
+   "s": "Pop culture",
+   "d": 3,
+   "q": "The stop-motion fantasy Wildwood opened in US cinemas. Which animation studio made it?",
+   "a": "Laika",
+   "w": [
+    "Aardman",
+    "Pixar",
+    "DreamWorks"
+   ],
+   "alt": [],
+   "f": "It was directed by Laika's CEO, Travis Knight, and opened with an 'A' CinemaScore.",
+   "mc": 1,
+   "src": "https://www.clickondetroit.com/entertainment/2026/10/25/you-can-see-everything-surges-with-195m-at-box-office-clayface-takes-no-1/"
+  }
+ ]
+}
