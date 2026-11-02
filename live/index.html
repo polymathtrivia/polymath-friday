@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Polymath Live</title>
+<meta name="description" content="Play Polymath Trivia together: one screen shows the questions, everyone answers on their phone.">
+<meta name="theme-color" content="#0E0C1D">
+<style>
+@font-face { font-family: "Onest"; src: url("fonts/Onest.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
+:root {
+  --bg: #F6F4FF; --glass: rgba(255,255,255,.62); --glass-strong: rgba(255,255,255,.82); --glass-line: rgba(255,255,255,.9);
+  --line: rgba(23,20,46,.11); --ink: #17142E; --muted: #625D80; --accent: #6B5BFF; --btn: #17142E; --on-btn: #FFFFFF;
+  --good: #13A672; --bad: #F0455B; --shadow: 0 8px 30px rgba(80,60,160,.12);
+  --glow-1: #FFD8C9; --glow-2: #D9D0FF; --glow-3: #C6F0FF; --grad: linear-gradient(90deg, #8B7BFF, #FF8FB1);
+  --a0: #F0455B; --a1: #3E6BFF; --a2: #E79A00; --a3: #0E9F6E; --on-a: #FFFFFF;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0E0C1D; --glass: rgba(255,255,255,.07); --glass-strong: rgba(255,255,255,.12); --glass-line: rgba(255,255,255,.12);
+  --line: rgba(255,255,255,.13); --ink: #F1EFFF; --muted: #A7A2C9; --accent: #AA9DFF; --btn: #F1EFFF; --on-btn: #0E0C1D;
+  --good: #4ADE9B; --bad: #FF6B81; --shadow: 0 8px 30px rgba(0,0,0,.35);
+  --glow-1: rgba(255,120,150,.22); --glow-2: rgba(120,95,255,.34); --glow-3: rgba(40,190,230,.2);
+  color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --bg: #0E0C1D; --glass: rgba(255,255,255,.07); --glass-strong: rgba(255,255,255,.12); --glass-line: rgba(255,255,255,.12);
+  --line: rgba(255,255,255,.13); --ink: #F1EFFF; --muted: #A7A2C9; --accent: #AA9DFF; --btn: #F1EFFF; --on-btn: #0E0C1D;
+  --good: #4ADE9B; --bad: #FF6B81; --shadow: 0 8px 30px rgba(0,0,0,.35);
+  --glow-1: rgba(255,120,150,.22); --glow-2: rgba(120,95,255,.34); --glow-3: rgba(40,190,230,.2);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body { background: var(--bg); color: var(--ink); font: 16px/1.45 "Onest", system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: -20%; z-index: -1; pointer-events: none;
+  background: radial-gradient(40% 35% at 15% 10%, var(--glow-1), transparent 70%), radial-gradient(45% 40% at 90% 15%, var(--glow-2), transparent 70%), radial-gradient(50% 45% at 50% 100%, var(--glow-3), transparent 70%); }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; border: 0; background: none; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.wrap { max-width: 560px; margin: 0 auto; padding: 24px 16px 48px; display: flex; flex-direction: column; gap: 18px; min-height: 100vh; min-height: 100dvh; }
+.tv .wrap { max-width: 1500px; padding: clamp(14px, 2.4vh, 40px) clamp(16px, 3vw, 48px); gap: clamp(10px, 1.8vh, 24px); }
+.glass { background: var(--glass); border: 1px solid var(--glass-line); border-radius: 26px; box-shadow: var(--shadow); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4); padding: 20px; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.05; letter-spacing: -.03em; margin: 0; }
+h2 { font-size: 1.3rem; margin: 0; letter-spacing: -.01em; }
+.muted { color: var(--muted); } .small { font-size: .88rem; }
+.brand { font-weight: 800; letter-spacing: -.02em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 24px; border-radius: 999px; background: var(--btn); color: var(--on-btn); font-weight: 700; }
+.btn:disabled { opacity: .4; cursor: default; }
+.btn-ghost { background: var(--glass-strong); color: var(--ink); border: 1px solid var(--line); }
+.btn-block { width: 100%; }
+.field { width: 100%; min-height: 56px; border-radius: 18px; border: 1px solid var(--line); background: var(--glass-strong); padding: 0 18px; font-size: 1.15rem; }
+.code-field { font-size: 1.8rem; letter-spacing: .3em; text-align: center; font-weight: 800; }
+label { font-weight: 700; font-size: .9rem; }
+.stack { display: flex; flex-direction: column; gap: 10px; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.spread { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.err { color: var(--bad); font-weight: 600; min-height: 1.2em; }
+.seg { display: flex; flex-wrap: wrap; gap: 8px; }
+.seg button { padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--glass-strong); font-weight: 600; }
+.seg button[aria-pressed="true"] { background: var(--btn); color: var(--on-btn); border-color: transparent; }
+.quiz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+.quiz { text-align: left; padding: 14px 16px; border-radius: 18px; border: 1px solid var(--line); background: var(--glass-strong); display: flex; flex-direction: column; gap: 2px; }
+.quiz b { font-size: 1.02rem; } .quiz span { color: var(--muted); font-size: .82rem; }
+.quiz[aria-pressed="true"] { outline: 3px solid var(--accent); outline-offset: -1px; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+
+/* TV: lobby */
+.lobby { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(16px, 3vw, 40px); align-items: stretch; flex: 1; }
+.join-card { display: flex; flex-direction: column; gap: 18px; justify-content: center; }
+.join-url { font-size: clamp(1.1rem, 2.2vw, 2rem); font-weight: 700; }
+.big-code { white-space: nowrap; font-size: clamp(3.5rem, 8vw, 8rem); font-weight: 900; letter-spacing: .08em; line-height: 1; }
+.qr { background: #fff; padding: 12px; border-radius: 18px; width: max-content; }
+.qr img, .qr canvas { display: block; width: clamp(140px, 16vw, 240px) !important; height: auto !important; }
+.players { display: flex; flex-wrap: wrap; gap: 10px; align-content: flex-start; }
+.chip { padding: 10px 18px; border-radius: 999px; background: var(--glass-strong); border: 1px solid var(--line); font-weight: 700; font-size: clamp(1rem, 1.6vw, 1.5rem); animation: pop .35s ease; }
+@keyframes pop { from { transform: scale(.6); opacity: 0; } }
+
+/* TV: question */
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: clamp(1rem, 1.6vw, 1.5rem); }
+.qtext { font-size: clamp(1.8rem, min(4.2vw, 7vh), 4.2rem); font-weight: 800; letter-spacing: -.02em; line-height: 1.12; text-align: center; margin: 0; }
+.qbox { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: clamp(12px, 2vw, 28px); text-align: center; }
+.qbox img.flag { max-height: 22vh; max-width: 60vw; border-radius: 12px; box-shadow: var(--shadow); }
+.answers { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(10px, 1.4vw, 20px); }
+.ans { display: flex; align-items: center; gap: 16px; padding: clamp(14px, 2vw, 28px); border-radius: 22px; color: var(--on-a); font-weight: 800; font-size: clamp(1.2rem, 2.4vw, 2.4rem); text-align: left; min-height: clamp(60px, 9vh, 130px); transition: opacity .3s, transform .3s; position: relative; overflow: hidden; }
+.ans .shape { font-size: 1.1em; flex: none; width: 1.3em; text-align: center; }
+.ans .count { margin-left: auto; font-size: .8em; opacity: .95; }
+.ans.dim { opacity: .28; } .ans.right { transform: scale(1.02); box-shadow: 0 0 0 5px var(--ink) inset; }
+.a0 { background: var(--a0); } .a1 { background: var(--a1); } .a2 { background: var(--a2); } .a3 { background: var(--a3); }
+.timer { width: clamp(60px, 9vh, 110px); height: clamp(60px, 9vh, 110px); border-radius: 50%; display: grid; place-items: center; font-weight: 900; font-size: clamp(1.6rem, 3vw, 3rem);
+  background: conic-gradient(var(--accent) calc(var(--p) * 1turn), var(--glass-strong) 0); position: relative; }
+.timer::after { content: attr(data-s); position: absolute; inset: 8px; border-radius: 50%; background: var(--bg); display: grid; place-items: center; }
+.fact { font-size: clamp(1rem, 1.8vw, 1.6rem); max-width: 60ch; }
+.board { display: flex; flex-direction: column; gap: 10px; width: min(900px, 100%); margin: 0 auto; }
+.brow { display: grid; grid-template-columns: 3ch 1fr auto auto; gap: 14px; align-items: center; padding: 14px 22px; border-radius: 18px; background: var(--glass-strong); border: 1px solid var(--line); font-size: clamp(1.1rem, 2vw, 1.9rem); font-weight: 700; }
+.brow .delta { color: var(--good); font-size: .75em; }
+.podium { display: flex; justify-content: center; align-items: flex-end; gap: clamp(10px, 2vw, 30px); flex: 1; }
+.pod { display: flex; flex-direction: column; align-items: center; gap: 10px; width: clamp(120px, 18vw, 260px); }
+.pod .bar { width: 100%; border-radius: 22px 22px 8px 8px; display: grid; place-items: start center; padding-top: 14px; font-size: clamp(2rem, 4vw, 4rem); font-weight: 900; color: #fff; }
+.pod .nm { font-size: clamp(1.1rem, 2.2vw, 2.2rem); font-weight: 800; text-align: center; word-break: break-word; }
+.pod .sc { color: var(--muted); font-weight: 700; }
+
+/* Phone */
+.pad { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; flex: 1; }
+.pad .ans { min-height: 120px; font-size: 1.1rem; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; }
+.pad .ans .shape { font-size: 2rem; text-align: left; }
+.status { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 12px; }
+.status .emoji { font-size: 4rem; line-height: 1; }
+.status .big { font-size: 2rem; font-weight: 800; letter-spacing: -.02em; }
+.verdict-ok { color: var(--good); } .verdict-no { color: var(--bad); }
+.pill { padding: 6px 14px; border-radius: 999px; background: var(--glass-strong); border: 1px solid var(--line); font-weight: 700; }
+.conn { position: fixed; bottom: 12px; left: 50%; transform: translateX(-50%); padding: 8px 16px; border-radius: 999px; background: var(--bad); color: #fff; font-weight: 700; font-size: .85rem; z-index: 5; }
+@media (max-width: 760px) { .lobby { grid-template-columns: 1fr; } .answers { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<main id="app" class="wrap" aria-live="polite"></main>
+<div id="conn" class="conn" hidden>Reconnecting…</div>
+<script src="qrcode.min.js"></script>
+<script>
+(() => {
+'use strict';
+// ── Settings ──
+const SUPABASE_URL = 'https://mcqplednizqdssuxweqf.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jcXBsZWRuaXpxZHNzdXh3ZXFmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MzI3MDIsImV4cCI6MjEwOTEwODcwMn0.gt-x5dmRNF8CzI9YQR3PLSoxvoklrUS_fnPl86p22ok';
+const params = new URLSearchParams(location.search);
+const LOCAL = params.has('local'); // test mode: tabs talk through BroadcastChannel instead of the internet
+const CATS = [
+  ['sci', 'Science', '#13B5A4'], ['his', 'History', '#E8894A'], ['geo', 'Geography', '#3DB56B'], ['pol', 'Politics', '#4C7DFF'],
+  ['cul', 'Culture', '#9A6BFF'], ['spo', 'Sport', '#FF7A59'], ['tec', 'Tech & Games', '#8DBA2E'], ['ani', 'Anime', '#FF5FB0'],
+  ['fil', 'Film & TV', '#E9B320'], ['mus', 'Music', '#FF5E7E'], ['lng', 'Language & words', '#2AA9E8'], ['biz', 'Money & business', '#B08A57'],
+];
+const CAT = Object.fromEntries(CATS.map(([id, name, color]) => [id, { name, color }]));
+CAT.news = { name: 'News', color: '#6B5BFF' }; CAT.flag = { name: 'Flags', color: '#3DB56B' };
+const SHAPES = ['▲', '◆', '●', '■'];
+const $app = document.getElementById('app'), $conn = document.getElementById('conn');
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = (Math.random() * (i + 1)) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const store = { get(k, d) { try { return JSON.parse(sessionStorage.getItem(k)) ?? d; } catch { return d; } }, set(k, v) { try { sessionStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+const uid = () => Math.random().toString(36).slice(2, 10);
+const joinBase = location.origin + location.pathname;
+
+// ── Realtime: a minimal Supabase Realtime (Phoenix) client — broadcast only, no data is stored ──
+function connectRoom(code, onMessage, onStatus) {
+  const topic = 'realtime:polymath-live-' + code;
+  if (LOCAL) {
+    const bc = new BroadcastChannel('polymath-live-' + code);
+    bc.onmessage = (e) => onMessage(e.data.event, e.data.payload);
+    setTimeout(() => onStatus('joined'), 0);
+    return { send: (event, payload) => bc.postMessage({ event, payload }), close: () => bc.close() };
+  }
+  let ws, ref = 0, joinRef = null, hb = null, closed = false, joined = false, queue = [], retry = 0;
+  const raw = (obj) => { if (ws && ws.readyState === 1) ws.send(JSON.stringify(obj)); };
+  const open = () => {
+    ws = new WebSocket(SUPABASE_URL.replace('https', 'wss') + '/realtime/v1/websocket?apikey=' + SUPABASE_KEY + '&vsn=1.0.0');
+    ws.binaryType = 'arraybuffer';
+    ws.onopen = () => {
+      joinRef = String(++ref);
+      raw({ topic, event: 'phx_join', ref: joinRef, join_ref: joinRef, payload: { config: { broadcast: { ack: false, self: false }, presence: { key: '', enabled: false }, postgres_changes: [], private: false }, access_token: SUPABASE_KEY } });
+      hb = setInterval(() => raw({ topic: 'phoenix', event: 'heartbeat', payload: {}, ref: String(++ref) }), 25000);
+    };
+    ws.onmessage = (e) => {
+      let msg;
+      if (typeof e.data === 'string') msg = JSON.parse(e.data);
+      else { // binary broadcast frame: [kind, topicLen, eventLen, topic, event, json]
+        const v = new DataView(e.data), dec = new TextDecoder(), tl = v.getUint8(1), el = v.getUint8(2);
+        msg = { topic: dec.decode(e.data.slice(3, 3 + tl)), event: dec.decode(e.data.slice(3 + tl, 3 + tl + el)), payload: JSON.parse(dec.decode(e.data.slice(3 + tl + el))) };
+      }
+      if (msg.topic !== topic) return;
+      if (msg.event === 'phx_reply' && msg.ref === joinRef) {
+        if (msg.payload?.status === 'ok') { joined = true; retry = 0; onStatus('joined'); queue.splice(0).forEach((m) => raw(m)); }
+        else onStatus('error', msg.payload?.response?.reason || 'Could not join the room');
+      } else if (msg.event === 'broadcast') {
+        const p = msg.payload || {};
+        onMessage(p.event, p.payload);
+      } else if (msg.event === 'phx_error' || msg.event === 'phx_close') { ws.close(); }
+    };
+    ws.onclose = () => {
+      clearInterval(hb); joined = false;
+      if (closed) return;
+      onStatus('reconnecting');
+      setTimeout(open, Math.min(8000, 500 * 2 ** retry++));
+    };
+    ws.onerror = () => {};
+  };
+  open();
+  return {
+    send(event, payload) {
+      const m = { topic, event: 'broadcast', ref: String(++ref), join_ref: joinRef, payload: { type: 'broadcast', event, payload } };
+      if (joined) raw(m); else queue.push(m);
+    },
+    close() { closed = true; clearInterval(hb); try { ws.close(); } catch {} },
+  };
+}
+function setConn(status) { $conn.hidden = status === 'joined'; $conn.textContent = status === 'error' ? 'Connection problem' : 'Reconnecting…'; }
+
+// ── Question data ──
+let DATA = null, FLAGS = null;
+const fetchJSON = (u) => fetch(u).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
+async function loadQuestions() { return DATA ||= await fetchJSON('data/questions.json'); }
+async function loadFlags() { return FLAGS ||= await fetchJSON('data/flags.json'); }
+async function loadFriday() { try { return await fetchJSON('../friday.json?t=' + Date.now()); } catch { return null; } }
+const toQ = (c, q, a, w, f, img) => { const opts = shuffle([a, ...w].slice(0, 4)); return { c, q, opts, correct: opts.indexOf(a), a, f: f || '', img }; };
+async function buildQuiz(cfg) {
+  if (cfg.quiz === 'flags') {
+    const fl = await loadFlags(), isos = shuffle(Object.keys(fl)).slice(0, cfg.count);
+    return isos.map((iso) => { const [n, reg] = fl[iso]; const near = shuffle(Object.keys(fl).filter((k) => k !== iso && fl[k][1] === reg)); const pool = near.length >= 3 ? near : shuffle(Object.keys(fl).filter((k) => k !== iso));
+      return toQ('flag', 'Which country’s flag is this?', n, pool.slice(0, 3).map((k) => fl[k][0]), `Region: ${reg}.`, iso); });
+  }
+  if (cfg.quiz === 'friday') {
+    const fri = await loadFriday(); if (!fri) throw new Error('The Friday 50 isn’t available right now');
+    return shuffle(fri.questions.filter((q) => q.w?.length >= 3)).slice(0, cfg.count).map((q) => toQ(CAT[q.c] ? q.c : 'news', q.q, q.a, q.w, q.f));
+  }
+  const all = await loadQuestions();
+  const cats = cfg.quiz === 'mix' ? CATS.map(([id]) => id) : [cfg.quiz];
+  const pick = [];
+  for (let i = 0; i < cfg.count; i++) {
+    const c = cats[i % cats.length];
+    let pool = all.filter((r) => r[0] === c && r[1] === cfg.diff && !pick.includes(r));
+    if (!pool.length) pool = all.filter((r) => r[0] === c && !pick.includes(r));
+    pick.push(pool[(Math.random() * pool.length) | 0]);
+  }
+  return shuffle(pick).map(([c, , q, a, w, f]) => toQ(c, q, a, w, f));
+}
+
+// ── Landing ──
+function landing(msg) {
+  document.body.classList.remove('tv'); document.documentElement.removeAttribute('data-theme');
+  const code = (params.get('code') || '').replace(/\D/g, '').slice(0, 6);
+  const me = store.get('pl.me', {});
+  $app.innerHTML = `
+    <div class="stack" style="gap:6px;padding-top:12px"><span class="brand" style="font-size:1.1rem">Polymath Live</span><h1>Play trivia together</h1>
+      <p class="muted" style="margin:0">One screen shows the questions. Everyone answers on their phone.</p></div>
+    <form class="glass stack" id="join" autocomplete="off">
+      <h2>Join a game</h2>
+      <label for="code">Game code</label><input class="field code-field" id="code" inputmode="numeric" maxlength="6" placeholder="000000" value="${esc(code)}" aria-describedby="jerr">
+      <label for="name">Your name</label><input class="field" id="name" maxlength="16" placeholder="Nickname" value="${esc(me.name || '')}">
+      <p class="err small" id="jerr" role="alert">${esc(msg || '')}</p>
+      <button class="btn btn-block" type="submit">Join</button>
+    </form>
+    <div class="glass stack"><h2>Host a game</h2><p class="muted small" style="margin:0">Open this page on a TV, laptop or tablet that everyone can see, then pick a quiz.</p>
+      <button class="btn btn-ghost btn-block" id="host">Host on this screen</button></div>
+    <p class="muted small" style="text-align:center">Questions from <a href="../" style="color:inherit">Polymath Trivia</a>. Names are only shared with the game, never stored.</p>`;
+  document.getElementById('host').onclick = hostSetup;
+  const f = document.getElementById('join');
+  if (code) document.getElementById('name').focus();
+  f.onsubmit = (e) => {
+    e.preventDefault();
+    const c = document.getElementById('code').value.replace(/\D/g, ''), n = document.getElementById('name').value.trim();
+    const err = document.getElementById('jerr');
+    if (c.length !== 6) { err.textContent = 'Enter the 6-digit code on the screen'; return; }
+    if (!n) { err.textContent = 'Pick a name'; return; }
+    playerJoin(c, n);
+  };
+}
+
+// ── Host ──
+let H = null; // host state
+function hostSetup() {
+  document.body.classList.add('tv'); document.documentElement.setAttribute('data-theme', 'dark');
+  const cfg = store.get('host.cfg', { quiz: 'mix', diff: 1, count: 15, time: 20 });
+  const quizzes = [['mix', 'General knowledge', 'Every category, mixed'], ...CATS.map(([id, n]) => [id, n, '']), ['flags', 'Flags', '194 countries'], ['friday', 'Friday 50', 'This week’s news quiz']];
+  const seg = (k, opts) => `<div class="seg">${opts.map(([v, n]) => `<button type="button" data-k="${k}" data-v="${v}" aria-pressed="${String(cfg[k]) === String(v)}">${n}</button>`).join('')}</div>`;
+  const draw = () => {
+    $app.innerHTML = `<div class="spread"><span class="brand" style="font-size:1.4rem">Polymath Live</span><button class="btn btn-ghost" id="back">Back</button></div>
+      <h1>Pick a quiz</h1>
+      <div class="quiz-grid">${quizzes.map(([id, n, s]) => `<button class="quiz" data-k="quiz" data-v="${id}" aria-pressed="${cfg.quiz === id}"><b>${CAT[id] ? `<span class="dot" style="background:${CAT[id].color}"></span>` : ''}${esc(n)}</b>${s ? `<span>${esc(s)}</span>` : ''}</button>`).join('')}</div>
+      <div class="glass row" style="gap:28px;align-items:flex-start">
+        ${['flags', 'friday'].includes(cfg.quiz) ? '' : `<div class="stack"><label>Difficulty</label>${seg('diff', [[1, 'Standard'], [2, 'Hard'], [3, 'Expert']])}</div>`}
+        <div class="stack"><label>Questions</label>${seg('count', [[10, '10'], [15, '15'], [20, '20'], [30, '30']])}</div>
+        <div class="stack"><label>Time per question</label>${seg('time', [[15, '15 s'], [20, '20 s'], [30, '30 s']])}</div>
+      </div>
+      <p class="err" id="herr" role="alert"></p>
+      <button class="btn" id="open" style="align-self:flex-start;min-width:240px">Open the room</button>`;
+    $app.querySelectorAll('[data-k]').forEach((b) => (b.onclick = () => { const k = b.dataset.k; cfg[k] = k === 'quiz' ? b.dataset.v : +b.dataset.v; store.set('host.cfg', cfg); draw(); }));
+    document.getElementById('back').onclick = () => landing();
+    document.getElementById('open').onclick = async (e) => {
+      e.target.disabled = true; e.target.textContent = 'Getting questions…';
+      try { const qs = await buildQuiz(cfg); startHosting(cfg, qs); }
+      catch (err) { document.getElementById('herr').textContent = err.message + '. Check the connection and try again.'; e.target.disabled = false; e.target.textContent = 'Open the room'; }
+    };
+  };
+  draw();
+}
+function startHosting(cfg, qs, restore) {
+  const code = restore?.code || String(100000 + Math.floor(Math.random() * 900000));
+  H = restore || { code, cfg, qs, i: -1, phase: 'lobby', players: {}, answers: {}, startedAt: 0 };
+  H.net = connectRoom(H.code, hostOnMessage, setConn);
+  saveHost(); hostRender();
+  window.onbeforeunload = () => (H && H.phase !== 'final' ? 'Leave the game?' : undefined);
+}
+function saveHost() { if (!H) return; const { net, timer, ...rest } = H; store.set('host.game', rest); }
+const ranked = () => Object.entries(H.players).map(([pid, p]) => ({ pid, ...p })).sort((a, b) => b.score - a.score);
+function publicState() {
+  const q = H.qs[H.i];
+  const base = { phase: H.phase, i: H.i, total: H.qs.length, quiz: H.cfg.quiz };
+  if (H.phase === 'question') return { ...base, opts: q.opts, c: q.c, left: Math.max(0, H.endsAt - Date.now()) };
+  if (H.phase === 'final') return { ...base, ranking: ranked().map(({ pid, name, score }) => ({ pid, name, score })) };
+  return base;
+}
+function broadcastState() { H.net.send('state', publicState()); }
+function hostOnMessage(event, p) {
+  if (!H || !p) return;
+  if (event === 'join') {
+    const taken = Object.entries(H.players).some(([pid, x]) => pid !== p.pid && x.name.toLowerCase() === String(p.name).toLowerCase());
+    if (taken) { H.net.send('welcome', { pid: p.pid, ok: false, reason: 'That name is taken. Try another.' }); return; }
+    if (!H.players[p.pid]) {
+      if (Object.keys(H.players).length >= 60) { H.net.send('welcome', { pid: p.pid, ok: false, reason: 'This game is full.' }); return; }
+      H.players[p.pid] = { name: String(p.name).slice(0, 16), score: 0, streak: 0, last: 0, rank: 0 };
+    }
+    H.net.send('welcome', { pid: p.pid, ok: true, name: H.players[p.pid].name, score: H.players[p.pid].score });
+    broadcastState(); saveHost();
+    if (H.phase === 'lobby') hostRender();
+  }
+  if (event === 'hello') { broadcastState(); if (H.phase === 'reveal' && H.lastReveal) H.net.send('reveal', H.lastReveal); }
+  if (event === 'answer' && H.phase === 'question' && p.i === H.i && H.players[p.pid] && H.answers[p.pid] == null) {
+    const elapsed = Math.min(H.cfg.time * 1000, Date.now() - H.startedAt);
+    H.answers[p.pid] = { choice: +p.choice, ms: elapsed };
+    H.net.send('ack', { pid: p.pid, i: H.i });
+    const n = Object.keys(H.answers).length, total = Object.keys(H.players).length;
+    const el = document.getElementById('anscount'); if (el) el.textContent = `${n} / ${total} answered`;
+    if (n >= total) reveal();
+  }
+}
+function nextQuestion() {
+  H.i++;
+  if (H.i >= H.qs.length) { H.phase = 'final'; broadcastState(); saveHost(); return hostRender(); }
+  H.phase = 'question'; H.answers = {}; H.startedAt = Date.now(); H.endsAt = H.startedAt + H.cfg.time * 1000;
+  broadcastState(); saveHost(); hostRender();
+  clearTimeout(H.timer); H.timer = setTimeout(reveal, H.cfg.time * 1000 + 300);
+}
+function reveal() {
+  if (H.phase !== 'question') return;
+  clearTimeout(H.timer);
+  const q = H.qs[H.i], dur = H.cfg.time * 1000, results = {};
+  for (const [pid, pl] of Object.entries(H.players)) {
+    const a = H.answers[pid], ok = !!a && a.choice === q.correct;
+    let delta = 0;
+    if (ok) { pl.streak++; delta = Math.round(1000 * (1 - a.ms / dur / 2)) + Math.min(500, 100 * (pl.streak - 1)); }
+    else pl.streak = 0;
+    pl.score += delta; pl.last = delta;
+    results[pid] = { ok, answered: !!a, delta, streak: pl.streak };
+  }
+  ranked().forEach((p, i) => { H.players[p.pid].rank = i + 1; if (results[p.pid]) { results[p.pid].rank = i + 1; results[p.pid].score = p.score; } });
+  H.phase = 'reveal';
+  H.lastReveal = { i: H.i, correct: q.correct, answer: q.a, results, players: Object.keys(H.players).length };
+  H.net.send('reveal', H.lastReveal); saveHost(); hostRender();
+}
+function hostRender() {
+  cancelAnimationFrame(H.raf);
+  const q = H.qs[H.i], pcount = Object.keys(H.players).length;
+  const top = `<div class="topbar"><span class="brand">Polymath Live</span><span class="muted">${H.i >= 0 && H.i < H.qs.length ? `Question ${H.i + 1} of ${H.qs.length}` : ''}</span><span>Code <b style="letter-spacing:.08em">${H.code}</b></span></div>`;
+  if (H.phase === 'lobby') {
+    const url = `${joinBase}?code=${H.code}`;
+    $app.innerHTML = `${top}<div class="lobby">
+      <div class="glass join-card"><span class="join-url">Join at <span class="brand">${esc(location.host + location.pathname)}</span></span>
+        <div><div class="muted" style="font-weight:700">Game code</div><div class="big-code">${H.code.slice(0, 3)}&thinsp;${H.code.slice(3)}</div></div>
+        <div class="row" style="gap:20px"><div class="qr" id="qr" aria-label="QR code to join"></div><span class="muted" style="max-width:24ch">Or scan to join with the code filled in.</span></div></div>
+      <div class="glass stack" style="gap:16px"><div class="spread"><h2 style="font-size:clamp(1.3rem,2vw,2rem)">${pcount} player${pcount === 1 ? '' : 's'}</h2><span class="muted">${esc(H.cfg.quiz === 'mix' ? 'General knowledge' : (CAT[H.cfg.quiz] || {}).name || (H.cfg.quiz === 'friday' ? 'Friday 50' : 'Flags'))} · ${H.qs.length} questions</span></div>
+        <div class="players">${Object.values(H.players).map((p) => `<span class="chip">${esc(p.name)}</span>`).join('') || '<span class="muted">Waiting for players…</span>'}</div>
+        <div style="margin-top:auto" class="row"><button class="btn" id="start" ${pcount ? '' : 'disabled'} style="min-width:220px">Start</button><button class="btn btn-ghost" id="cancel">Cancel</button></div></div></div>`;
+    try { new QRCode(document.getElementById('qr'), { text: url, width: 240, height: 240, colorDark: '#0E0C1D', colorLight: '#ffffff' }); } catch { document.getElementById('qr').remove(); }
+    document.getElementById('start').onclick = nextQuestion;
+    document.getElementById('cancel').onclick = endHosting;
+    return;
+  }
+  if (H.phase === 'question') {
+    const cat = CAT[q.c] || CAT.news;
+    $app.innerHTML = `${top}<div class="qbox">
+      <span class="pill"><span class="dot" style="background:${cat.color}"></span>${esc(cat.name)}</span>
+      ${q.img && FLAGS?.[q.img] ? `<img class="flag" src="${FLAGS[q.img][2]}" alt="A national flag">` : ''}
+      <h1 class="qtext">${esc(q.q)}</h1></div>
+      <div class="spread"><div class="timer" id="timer" style="--p:1" data-s="${H.cfg.time}"></div><span class="muted" id="anscount" style="font-weight:700;font-size:clamp(1rem,1.6vw,1.5rem)">${Object.keys(H.answers).length} / ${pcount} answered</span><button class="btn btn-ghost" id="skip">Reveal now</button></div>
+      <div class="answers">${q.opts.map((o, k) => `<div class="ans a${k}"><span class="shape" aria-hidden="true">${SHAPES[k]}</span><span>${esc(o)}</span></div>`).join('')}</div>`;
+    document.getElementById('skip').onclick = reveal;
+    const t = document.getElementById('timer'), dur = H.cfg.time * 1000;
+    const tick = () => { const left = Math.max(0, H.endsAt - Date.now()); t.style.setProperty('--p', left / dur); t.dataset.s = Math.ceil(left / 1000); if (left > 0 && H.phase === 'question') H.raf = requestAnimationFrame(tick); };
+    tick();
+    return;
+  }
+  if (H.phase === 'reveal') {
+    const counts = [0, 0, 0, 0]; Object.values(H.answers).forEach((a) => counts[a.choice]++);
+    const cat = CAT[q.c] || CAT.news;
+    $app.innerHTML = `${top}<div class="qbox">
+      <span class="pill"><span class="dot" style="background:${cat.color}"></span>${esc(cat.name)}</span>
+      ${q.img && FLAGS?.[q.img] ? `<img class="flag" src="${FLAGS[q.img][2]}" alt="A national flag" style="max-height:24vh">` : ''}
+      <h1 class="qtext" style="font-size:clamp(1.5rem,3vw,3rem)">${esc(q.q)}</h1>
+      ${q.f ? `<p class="fact muted" style="margin:0">${esc(q.f)}</p>` : ''}</div>
+      <div class="answers">${q.opts.map((o, k) => `<div class="ans a${k} ${k === q.correct ? 'right' : 'dim'}"><span class="shape" aria-hidden="true">${k === q.correct ? '✓' : SHAPES[k]}</span><span>${esc(o)}</span><span class="count">${counts[k]}</span></div>`).join('')}</div>
+      <div class="row" style="justify-content:flex-end"><button class="btn" id="next" style="min-width:220px">${H.i + 1 >= H.qs.length ? 'Final results' : 'Leaderboard'}</button></div>`;
+    document.getElementById('next').onclick = () => { if (H.i + 1 >= H.qs.length) { nextQuestion(); } else { H.phase = 'board'; broadcastState(); saveHost(); hostRender(); } };
+    document.getElementById('next').focus();
+    return;
+  }
+  if (H.phase === 'board') {
+    const rows = ranked().slice(0, 5);
+    $app.innerHTML = `${top}<h1 style="text-align:center">Leaderboard</h1>
+      <div class="board">${rows.map((p, k) => `<div class="brow"><span class="muted">${k + 1}</span><span>${esc(p.name)}${p.streak >= 3 ? ` <span title="Answer streak">🔥${p.streak}</span>` : ''}</span><span class="delta">${p.last ? `+${p.last}` : ''}</span><span>${p.score.toLocaleString()}</span></div>`).join('')}</div>
+      <div class="row" style="justify-content:flex-end;margin-top:auto"><button class="btn" id="next" style="min-width:220px">Next question</button></div>`;
+    document.getElementById('next').onclick = nextQuestion; document.getElementById('next').focus();
+    return;
+  }
+  if (H.phase === 'final') {
+    const r = ranked(), order = [r[1], r[0], r[2]], heights = ['42vh', '56vh', '32vh'], colors = ['#8B7BFF', '#F0B400', '#FF8FB1'], places = [2, 1, 3];
+    $app.innerHTML = `${top}<h1 style="text-align:center">Final results</h1>
+      <div class="podium">${order.map((p, k) => p ? `<div class="pod"><span class="nm">${esc(p.name)}</span><span class="sc">${p.score.toLocaleString()}</span><div class="bar" style="height:${heights[k]};background:${colors[k]}">${places[k]}</div></div>` : '').join('')}</div>
+      ${r.length > 3 ? `<p class="muted" style="text-align:center;font-size:1.2rem">${r.slice(3, 10).map((p, k) => `${k + 4}. ${esc(p.name)} (${p.score.toLocaleString()})`).join(' · ')}</p>` : ''}
+      <div class="row" style="justify-content:center"><button class="btn" id="again">Play again with the same players</button><button class="btn btn-ghost" id="new">New game</button></div>`;
+    document.getElementById('again').onclick = async (e) => {
+      e.target.disabled = true;
+      try { H.qs = await buildQuiz(H.cfg); H.i = -1; H.phase = 'lobby'; Object.values(H.players).forEach((p) => Object.assign(p, { score: 0, streak: 0, last: 0, rank: 0 })); broadcastState(); saveHost(); hostRender(); }
+      catch { e.target.disabled = false; }
+    };
+    document.getElementById('new').onclick = () => { endHosting(); hostSetup(); };
+  }
+}
+function endHosting() {
+  if (H) { H.net.send('state', { phase: 'closed' }); H.net.close(); clearTimeout(H.timer); }
+  H = null; store.set('host.game', null); window.onbeforeunload = null; landing();
+}
+document.addEventListener('keydown', (e) => {
+  if (!H || e.target.tagName === 'INPUT') return;
+  if (e.key === ' ' || e.key === 'Enter') { const b = document.getElementById('next') || document.getElementById('start'); if (b && !b.disabled) { e.preventDefault(); b.click(); } }
+});
+
+// ── Player ──
+let P = null;
+function playerJoin(code, name) {
+  const me = store.get('pl.me', {});
+  const pid = me.code === code && me.pid ? me.pid : uid();
+  store.set('pl.me', { code, pid, name });
+  P = { code, pid, name, state: { phase: 'connecting' }, score: 0, picked: null, result: null, welcomed: false };
+  P.net = connectRoom(code, playerOnMessage, (s, reason) => {
+    setConn(s);
+    if (s === 'joined') { P.net.send('join', { pid, name }); P.net.send('hello', { pid }); }
+    if (s === 'error') landing(reason);
+  });
+  P.timeout = setTimeout(() => { if (P && !P.welcomed) { P.net.close(); P = null; setConn('joined'); landing('No game found with that code. Check the screen and try again.'); } }, 9000);
+  playerRender();
+}
+function playerOnMessage(event, p) {
+  if (!P || !p) return;
+  if (event === 'welcome' && p.pid === P.pid) {
+    clearTimeout(P.timeout);
+    if (!p.ok) { P.net.close(); P = null; return landing(p.reason); }
+    P.welcomed = true; P.name = p.name; P.score = p.score || 0; playerRender();
+  }
+  if (event === 'state') {
+    if (p.phase === 'closed') { P.net.close(); P = null; return landing('The host ended the game.'); }
+    const newQ = p.phase === 'question' && (P.state.phase !== 'question' || P.state.i !== p.i);
+    P.state = p;
+    if (newQ) { P.picked = null; P.result = null; P.qStart = Date.now(); P.left = p.left; }
+    if (p.phase === 'lobby') { P.score = 0; P.result = null; }
+    if (P.welcomed) playerRender();
+  }
+  if (event === 'ack' && p.pid === P.pid) { P.acked = p.i; }
+  if (event === 'reveal' && p.i === P.state.i) {
+    P.state = { ...P.state, phase: 'reveal' };
+    P.result = p.results[P.pid] || { ok: false, answered: false, delta: 0 };
+    if (P.result.score != null) P.score = P.result.score;
+    P.answer = p.answer; P.correct = p.correct; P.players = p.players;
+    if (P.welcomed) playerRender();
+  }
+}
+function playerRender() {
+  document.body.classList.remove('tv'); document.documentElement.removeAttribute('data-theme');
+  if (!P) return;
+  const s = P.state, head = `<div class="spread"><span class="pill">${esc(P.name)}</span><span class="pill">${P.score.toLocaleString()} pts</span></div>`;
+  const status = (emoji, big, small) => `${head}<div class="status"><div class="emoji" aria-hidden="true">${emoji}</div><div class="big">${big}</div>${small ? `<p class="muted" style="margin:0">${small}</p>` : ''}</div>`;
+  if (!P.welcomed) { $app.innerHTML = `<div class="status"><div class="emoji" aria-hidden="true">📡</div><div class="big">Joining ${esc(P.code)}…</div></div>`; return; }
+  if (s.phase === 'lobby' || s.phase === 'connecting') { $app.innerHTML = status('🎉', 'You’re in!', 'See your name on the screen? The game starts soon.'); return; }
+  if (s.phase === 'question') {
+    if (P.picked != null) { $app.innerHTML = status(SHAPES[P.picked], 'Locked in', 'Waiting for everyone else…'); return; }
+    $app.innerHTML = `${head}<p class="muted" style="margin:0;text-align:center">Question ${s.i + 1} of ${s.total} · look at the screen</p>
+      <div class="pad">${s.opts.map((o, k) => `<button class="ans a${k}" data-k="${k}"><span class="shape" aria-hidden="true">${SHAPES[k]}</span><span>${esc(o)}</span></button>`).join('')}</div>`;
+    $app.querySelectorAll('[data-k]').forEach((b) => (b.onclick = () => {
+      if (P.picked != null) return;
+      P.picked = +b.dataset.k; navigator.vibrate?.(30);
+      P.net.send('answer', { pid: P.pid, i: s.i, choice: P.picked }); playerRender();
+    }));
+    return;
+  }
+  if (s.phase === 'reveal' && P.result) {
+    const r = P.result;
+    if (!r.answered) { $app.innerHTML = status('⏱️', 'Too slow!', `The answer was <b>${esc(P.answer)}</b>.${r.rank ? ` You’re ${ordinal(r.rank)} of ${P.players}.` : ''}`); return; }
+    $app.innerHTML = status(r.ok ? '✅' : '❌', `<span class="${r.ok ? 'verdict-ok' : 'verdict-no'}">${r.ok ? `Correct! +${r.delta}` : 'Not this time'}</span>`,
+      `${r.ok ? (r.streak >= 2 ? `🔥 ${r.streak} in a row. ` : '') : `The answer was <b>${esc(P.answer)}</b>. `}You’re ${ordinal(r.rank)} of ${P.players}.`);
+    return;
+  }
+  if (s.phase === 'reveal' || s.phase === 'board') { $app.innerHTML = status('👀', 'Eyes on the screen', 'Next question coming up.'); return; }
+  if (s.phase === 'final') {
+    const idx = s.ranking.findIndex((x) => x.pid === P.pid), place = idx + 1;
+    $app.innerHTML = status(place === 1 ? '🏆' : place === 2 ? '🥈' : place === 3 ? '🥉' : '👏', place ? `${ordinal(place)} place` : 'Game over', `${P.score.toLocaleString()} points. Thanks for playing!`)
+      + `<a class="btn btn-ghost btn-block" href="../" style="text-decoration:none">Get Polymath Trivia</a>`;
+  }
+}
+const ordinal = (n) => { const s = ['th', 'st', 'nd', 'rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); };
+
+// ── Start: resume a hosted game after a refresh, otherwise show the landing page ──
+const saved = store.get('host.game', null);
+if (saved && saved.phase !== 'final' && !params.get('code')) {
+  document.body.classList.add('tv'); document.documentElement.setAttribute('data-theme', 'dark');
+  if (saved.cfg.quiz === 'flags') loadFlags().catch(() => {});
+  startHosting(saved.cfg, saved.qs, saved);
+  if (H.phase === 'question') { const left = H.endsAt - Date.now(); if (left > 0) H.timer = setTimeout(reveal, left + 300); else reveal(); }
+} else landing();
+})();
+</script>
+</body>
+</html>
