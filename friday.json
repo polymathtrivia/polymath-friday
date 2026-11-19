@@ -1,815 +1,818 @@
 {
- "edition": "2026-11-13",
+ "edition": "2026-11-20",
  "title": "Friday 50",
- "week": "7 – 13 November 2026",
+ "week": "14 – 20 November 2026",
  "questions": [
   {
    "c": "news",
    "s": "World news",
    "d": 1,
-   "q": "New Zealand voted on 7 November. Whose centre-right coalition leads on preliminary results?",
-   "a": "Christopher Luxon",
+   "q": "Donald Trump, Xi Jinping and Vladimir Putin held their first three-way meeting at APEC in which Chinese city?",
+   "a": "Shenzhen",
    "w": [
-    "Chris Hipkins",
-    "David Seymour",
-    "Chlöe Swarbrick"
+    "Beijing",
+    "Shanghai",
+    "Guangzhou"
    ],
    "alt": [],
-   "f": "His National–ACT–NZ First bloc has 67 of 131 seats so far, with final results due 27 November.",
+   "f": "Their joint statement said a nuclear war can never be won and must never be fought.",
    "mc": 1,
-   "src": "https://www.cnn.com/2026/11/07/world/new-zealand-election-result-uncertain-intl-hnk"
-  },
-  {
-   "c": "news",
-   "s": "World news",
-   "d": 2,
-   "q": "Israel's President Herzog gave the first chance to form a new government to which former army chief?",
-   "a": "Gadi Eisenkot",
-   "w": [
-    "Benny Gantz",
-    "Yair Lapid",
-    "Naftali Bennett"
-   ],
-   "alt": [],
-   "f": "67 members of the Knesset recommended him, against 46 for Benjamin Netanyahu.",
-   "mc": 1,
-   "src": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government"
+   "src": "https://www.cnn.com/2026/11/19/politics/trump-putin-xi-meeting-takeaways"
   },
   {
    "c": "news",
    "s": "World news",
    "d": 1,
-   "q": "Russia and Ukraine held their first direct talks in about nine months in which city?",
-   "a": "Abu Dhabi",
+   "q": "Trump's Asia trip began at the ASEAN summit in which capital city?",
+   "a": "Manila",
    "w": [
-    "Istanbul",
-    "Riyadh",
-    "Geneva"
+    "Jakarta",
+    "Bangkok",
+    "Hanoi"
    ],
    "alt": [],
-   "f": "The US-mediated talks ended with agreement on a large prisoner exchange.",
+   "f": "It was the 49th ASEAN Summit, hosted by Philippine President Ferdinand Marcos Jr.",
    "mc": 1,
-   "src": "https://www.aljazeera.com/amp/news/2026/11/11/russia-ukraine-talks-in-abu-dhabi-end-with-prisoner-exchange-agreement"
+   "src": "https://www.inquirer.com/news/nation-world/donald-trump-philippines-economic-deals-20261117.html"
   },
   {
    "c": "news",
    "s": "World news",
    "d": 2,
-   "q": "Stephen Miller became White House chief of staff this week, replacing whom?",
-   "a": "Susie Wiles",
+   "q": "Ukraine brought down part of the road section of which bridge linking Russia to occupied Crimea?",
+   "a": "Kerch Bridge",
    "w": [
-    "Karoline Leavitt",
-    "Pam Bondi",
-    "Kristi Noem"
+    "Antonivskyi Bridge",
+    "Chonhar Bridge",
+    "Kakhovka Bridge"
    ],
    "alt": [],
-   "f": "Wiles, the first woman in the job, moves to Donald Trump's political operation.",
+   "f": "The bridge had also been hit in October 2022 and July 2023; the Kremlin says it will rebuild.",
    "mc": 1,
-   "src": "https://www.npr.org/2026/11/06/nx-s1-6032795/stephen-miller-replace-susie-wiles-trumps-chief-of-staff"
-  },
-  {
-   "c": "news",
-   "s": "World news",
-   "d": 1,
-   "q": "Pope Leo XIV made the first papal visit in nearly four decades to which country?",
-   "a": "Argentina",
-   "w": [
-    "Chile",
-    "Brazil",
-    "Mexico"
-   ],
-   "alt": [],
-   "f": "President Javier Milei greeted him in Buenos Aires before he moved on to Peru.",
-   "mc": 1,
-   "src": "https://www.cnn.com/2026/11/09/americas/pope-visit-argentina-latam-intl"
+   "src": "https://www.cnn.com/2026/11/17/europe/ukraine-russia-kerch-bridge-intl-hnk"
   },
   {
    "c": "news",
    "s": "World news",
    "d": 2,
-   "q": "Spain's first general strike in 14 years was driven mainly by anger over what?",
-   "a": "Housing costs and wages",
+   "q": "Which country's president, Ukhnaa Khurelsukh, announced his resignation over corruption allegations?",
+   "a": "Mongolia",
    "w": [
-    "Pension age changes",
-    "Fuel taxes",
-    "EU migration rules"
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "Uzbekistan"
    ],
    "alt": [],
-   "f": "The 24-hour strike by the UGT and CCOO unions disrupted transport, ports and factories.",
+   "f": "He denies the allegations, which relate to a railway contract; parliament must approve the resignation.",
    "mc": 1,
-   "src": "https://www.aljazeera.com/news/2026/11/11/spains-first-general-strike-in-14-years-begins"
+   "src": "https://www.ajc.com/news/2026/11/mongolias-president-says-he-will-step-down-after-facing-accusations-of-corruption/"
   },
   {
    "c": "news",
    "s": "World news",
    "d": 3,
-   "q": "A magnitude 5.7 earthquake in central Japan on Sunday was centred in which prefecture?",
-   "a": "Shizuoka",
+   "q": "Israel's Knesset elected a new speaker allied with Gadi Eisenkot. Who?",
+   "a": "Matan Kahana",
    "w": [
-    "Nagano",
-    "Kanagawa",
-    "Mie"
+    "Ofir Katz",
+    "Amir Ohana",
+    "Yuli Edelstein"
    ],
    "alt": [],
-   "f": "About 22 people were hurt, mostly in neighbouring Aichi, and there was no tsunami warning.",
+   "f": "He won 66–52, replacing Netanyahu ally Amir Ohana.",
    "mc": 1,
-   "src": "https://www.japantimes.co.jp/news/2026/11/08/japan/earthquake-aichi-sunday/"
+   "src": "https://www.al-monitor.com/originals/2026/11/eisenkot-led-bloc-replaces-netanyahu-ally-knesset-speaker"
   },
   {
    "c": "news",
-   "s": "Australia",
-   "d": 2,
-   "q": "Which south-east Queensland city was worst hit by power cuts after Wednesday's supercell storms?",
-   "a": "Logan",
+   "s": "World news",
+   "d": 1,
+   "q": "Iran fired drones at a US radar in which Gulf state, home to the US Navy's Fifth Fleet?",
+   "a": "Bahrain",
    "w": [
-    "Ipswich",
-    "Redland City",
-    "Moreton Bay"
+    "Qatar",
+    "Kuwait",
+    "United Arab Emirates"
    ],
    "alt": [],
-   "f": "More than 81,000 homes in the south-east lost power, almost 60,000 of them in Logan.",
+   "f": "The drones were intercepted; it was the third such attack in five days.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/queensland-storms-power-outages/107374012"
+   "src": "https://www.npr.org/2026/11/17/nx-s1-6044255/us-iran-war-latest-bahrain"
+  },
+  {
+   "c": "news",
+   "s": "World news",
+   "d": 2,
+   "q": "A revised COP31 draft deal released on Thursday dropped every reference to what?",
+   "a": "Fossil fuels",
+   "w": [
+    "Deforestation",
+    "Methane from livestock",
+    "Carbon capture"
+   ],
+   "alt": [],
+   "f": "Australia's Chris Bowen, chairing the talks, vowed to stay until there is consensus.",
+   "mc": 1,
+   "src": "https://www.france24.com/en/live-news/20261119-cop31-draft-climate-deal-removes-mention-of-fossil-fuels"
   },
   {
    "c": "news",
    "s": "Australia",
    "d": 1,
-   "q": "Which department store chain, now in receivership, named 19 stores it will close?",
-   "a": "David Jones",
+   "q": "Who was named 2027 Queensland Australian of the Year?",
+   "a": "Robert Irwin",
    "w": [
-    "Myer",
-    "Harris Scarfe",
-    "Target"
+    "Bindi Irwin",
+    "Terri Irwin",
+    "Steve Baxter"
    ],
    "alt": [],
-   "f": "Closures include Robina and Sunshine Plaza in Queensland and the chain's only NZ store.",
+   "f": "His mother Terri accepted the award for him; the national winner is named on 25 January.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/david-jones-to-close-stores/107372854"
+   "src": "https://www.thesenior.com.au/story/9392698/robert-irwin-named-2027-queensland-australian-of-the-year/"
+  },
+  {
+   "c": "news",
+   "s": "Australia",
+   "d": 2,
+   "q": "Which Ipswich sprinter was named Queensland's Young Australian of the Year?",
+   "a": "Gout Gout",
+   "w": [
+    "Lachlan Kennedy",
+    "Rohan Browning",
+    "Jake Doran"
+   ],
+   "alt": [],
+   "f": "Carmel Crouch AM was named Senior Australian of the Year for Queensland.",
+   "mc": 1,
+   "src": "https://www.thesenior.com.au/story/9392698/robert-irwin-named-2027-queensland-australian-of-the-year/"
   },
   {
    "c": "news",
    "s": "Australia",
    "d": 3,
-   "q": "Qantas will cut about 850 corporate jobs under a technology deal with which firm?",
-   "a": "Accenture",
+   "q": "Hailstones about 10 cm across were reported at Mt Tarampa on Monday. Which council area is it in?",
+   "a": "Somerset",
    "w": [
-    "Deloitte",
-    "IBM",
-    "Infosys"
+    "Lockyer Valley",
+    "Scenic Rim",
+    "Toowoomba"
    ],
    "alt": [],
-   "f": "Most of the roles are Sydney-based and many will move overseas.",
+   "f": "Hail of 7–8 cm also fell around Gatton and Helidon.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-10/850-jobs-to-go-from-qantas-as-airline-moves-roles-overseas/107368120"
+   "src": "https://www.abc.net.au/news/2026-11-16/south-east-queensland-severe-thunderstorms/107379998"
+  },
+  {
+   "c": "news",
+   "s": "Australia",
+   "d": 3,
+   "q": "A magnitude 6.6 earthquake felt in Darwin and Katherine struck beneath which sea?",
+   "a": "Banda Sea",
+   "w": [
+    "Arafura Sea",
+    "Timor Sea",
+    "Coral Sea"
+   ],
+   "alt": [],
+   "f": "More than 460 Australians reported feeling it; there was no tsunami threat.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-11-17/magnitude-6-6-earthquake-indonesia-tremors-felt-in-darwin/107393396"
   },
   {
    "c": "news",
    "s": "Australia",
    "d": 1,
-   "q": "John Setka has been expelled for five years from which union?",
-   "a": "CFMEU",
+   "q": "In which Brisbane park are early works under way for the 2032 Olympic stadium?",
+   "a": "Victoria Park",
    "w": [
-    "AWU",
-    "ETU",
-    "AMWU"
+    "Roma Street Parklands",
+    "Musgrave Park",
+    "New Farm Park"
    ],
    "alt": [],
-   "f": "The union's administrator expelled him after 27 charges; Setka denies wrongdoing and plans to appeal.",
+   "f": "The 63,000-seat stadium will host the opening and closing ceremonies and athletics.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/john-setka-expelled-cfmeu-administration-union-funds/107373306"
+   "src": "https://www.abc.net.au/news/2026-11-18/queensland-olympic-stadium-victoria-park-gabba-demolition/107399032"
   },
   {
    "c": "news",
    "s": "Australia",
    "d": 2,
-   "q": "Todd Russell, who died this week aged 54, survived a 2006 mine collapse in which Tasmanian town?",
-   "a": "Beaconsfield",
+   "q": "Australia signed a US-led agreement protecting supply chains for which technology?",
+   "a": "Advanced AI",
    "w": [
-    "Queenstown",
-    "Rosebery",
-    "Zeehan"
+    "Nuclear submarines",
+    "Electric vehicle batteries",
+    "Solar panels"
    ],
    "alt": [],
-   "f": "He and Brant Webb were trapped underground for 14 days; tributes came from across the country.",
+   "f": "The deal covers the sensitive technology and inputs that advanced AI depends on.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-10/tas-beaconsfield-survivor-todd-russell-tributes/107367146"
-  },
-  {
-   "c": "news",
-   "s": "Australia",
-   "d": 3,
-   "q": "Which Cape York town recorded its hottest November day on record, 39.8°C, last Saturday?",
-   "a": "Weipa",
-   "w": [
-    "Cooktown",
-    "Coen",
-    "Bamaga"
-   ],
-   "alt": [],
-   "f": "The far-north heatwave came the same weekend storms cut power to Sarina.",
-   "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-09/heatwave-far-north-queensland-storms-ease-south-east/107360646"
+   "src": "https://www.abc.net.au/news/2026-11-17/australia-signs-us-led-ai-supply-chain-agreement/107392252"
   },
   {
    "c": "news",
    "s": "Business",
    "d": 2,
-   "q": "Which big four bank reported a full-year cash profit of about $7.6 billion, up 31%?",
-   "a": "ANZ",
+   "q": "Australia's October unemployment rate was the highest since which year?",
+   "a": "2021",
    "w": [
-    "Westpac",
-    "NAB",
-    "Commonwealth Bank"
+    "2019",
+    "2020",
+    "2023"
    ],
    "alt": [],
-   "f": "It declared a final dividend of 83 cents a share.",
+   "f": "It was the third monthly rise in a row; employment fell when economists expected a gain.",
    "mc": 1,
-   "src": "https://www.anz.com.au/newsroom/media/2026/november/2026-full-year-result---proposed-final-dividend/"
-  },
-  {
-   "c": "news",
-   "s": "Business",
-   "d": 2,
-   "q": "The November Westpac–Melbourne Institute survey put consumer sentiment at its lowest in how many years?",
-   "a": "Four",
-   "w": [
-    "Two",
-    "Six",
-    "Ten"
-   ],
-   "alt": [],
-   "f": "Sentiment among mortgage holders hit the lowest level since the series began in 1994.",
-   "mc": 1,
-   "src": "https://www.westpac.com.au/news/money-matters/2026/11/festive-drear-consumer-mood-sinks-ahead-of-the-silly-season/amp/"
-  },
-  {
-   "c": "news",
-   "s": "Business",
-   "d": 3,
-   "q": "US October inflation came with no annual figure. Why?",
-   "a": "The 2025 government shutdown stopped data collection",
-   "w": [
-    "A cyber attack on the statistics bureau",
-    "A change in the index base year",
-    "Hurricane damage to survey offices"
-   ],
-   "alt": [],
-   "f": "Prices still rose 0.4% in the month, above the 0.3% forecast.",
-   "mc": 1,
-   "src": "https://abc7chicago.com/story/consumer-prices-increased-04-october-higher-expected/20029965/"
-  },
-  {
-   "c": "news",
-   "s": "Business",
-   "d": 2,
-   "q": "US Federal Reserve governor Christopher Waller said what should be considered in December?",
-   "a": "A half-point rate hike",
-   "w": [
-    "A half-point rate cut",
-    "Holding rates until mid-2027",
-    "Ending all bond sales"
-   ],
-   "alt": [],
-   "f": "He linked it to core inflation of 0.3% or more, which the October data then delivered.",
-   "mc": 1,
-   "src": "https://www.morningstar.com/news/marketwatch/2026111022/feds-waller-puts-half-point-rate-hike-into-the-mix-for-december"
+   "src": "https://www.abs.gov.au/media-centre/media-releases/unemployment-rate-rises-49"
   },
   {
    "c": "news",
    "s": "Business",
    "d": 1,
-   "q": "Oil prices slid on Monday after Donald Trump signalled restraint towards which country?",
-   "a": "Iran",
+   "q": "Wages rose 3.5% over the year while inflation is 4.3%. So real wages are doing what?",
+   "a": "Falling",
    "w": [
-    "Venezuela",
-    "Russia",
-    "Saudi Arabia"
+    "Rising",
+    "Holding steady",
+    "Hitting a record high"
    ],
    "alt": [],
-   "f": "Brent crude had already fallen 16% the week before.",
+   "f": "When prices rise faster than pay, what each pay packet buys shrinks.",
    "mc": 1,
-   "src": "https://www.businessday.co.za/world/2026-11-09-oil-falls-as-trump-signals-restraint-on-iran-amid-fresh-hormuz-shipping-attacks/"
+   "src": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/wage-price-index-australia/latest-release"
+  },
+  {
+   "c": "news",
+   "s": "Business",
+   "d": 2,
+   "q": "After the jobs data the Australian dollar fell to a 2026 low of about how much?",
+   "a": "67 US cents",
+   "w": [
+    "62 US cents",
+    "72 US cents",
+    "75 US cents"
+   ],
+   "alt": [],
+   "f": "Earlier in November it had been above 70 US cents.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-11-19/asx-markets-business-news-live-updates-thursday-19-november/107401802"
+  },
+  {
+   "c": "news",
+   "s": "Business",
+   "d": 3,
+   "q": "Gold fell below which level for the first time since September 2025?",
+   "a": "US$3,800 an ounce",
+   "w": [
+    "US$2,500 an ounce",
+    "US$4,500 an ounce",
+    "US$5,000 an ounce"
+   ],
+   "alt": [],
+   "f": "It is down about a third from its record near US$5,600 in January.",
+   "mc": 1,
+   "src": "https://www.cnbc.com/2026/11/18/gold-slides-to-over-one-year-low-on-firm-dollar-us-rate-outlook.html"
+  },
+  {
+   "c": "news",
+   "s": "Business",
+   "d": 3,
+   "q": "Anthropic, maker of the Claude AI models, listed on Nasdaq under which ticker?",
+   "a": "ANT",
+   "w": [
+    "ANTH",
+    "CLDE",
+    "AIAI"
+   ],
+   "alt": [],
+   "f": "It priced at US$83 a share and raised about US$81 billion, a record IPO.",
+   "mc": 1,
+   "src": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
+  },
+  {
+   "c": "news",
+   "s": "Science",
+   "d": 2,
+   "q": "SpaceX caught a Starship upper stage for the first time, using tower arms nicknamed what?",
+   "a": "Chopsticks",
+   "w": [
+    "Pincers",
+    "Tongs",
+    "Claws"
+   ],
+   "alt": [],
+   "f": "The booster's own catch was aborted, and it was destroyed over the Gulf of Mexico.",
+   "mc": 1,
+   "src": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history"
   },
   {
    "c": "news",
    "s": "Tech",
    "d": 2,
-   "q": "Who is Nvidia's interim CEO after Jensen Huang resigned?",
-   "a": "Colette Kress",
+   "q": "A failed Vulcan rocket launch destroyed 40 internet satellites belonging to which company?",
+   "a": "Amazon",
    "w": [
-    "Lisa Su",
-    "Jayshree Ullal",
-    "Debora Shoquist"
+    "SpaceX",
+    "OneWeb",
+    "Telstra"
    ],
    "alt": [],
-   "f": "Kress stays on as chief financial officer, and Harvey Jones becomes the board's first chair.",
+   "f": "They were for Amazon's Leo network; it was the first of 38 Vulcan launches Amazon has booked.",
    "mc": 1,
-   "src": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+   "src": "https://www.datacenterdynamics.com/en/news/amazon-loses-40-satellites-after-ula-rocket-launch-anomaly/"
   },
   {
    "c": "news",
    "s": "Health",
-   "d": 2,
-   "q": "The US FDA added a new warning to all GLP-1 drugs such as Ozempic about a rare risk to what?",
-   "a": "Eyesight, via the optic nerve",
+   "d": 3,
+   "q": "The US lost its measles elimination status this week. Since which year had it held it?",
+   "a": "2000",
    "w": [
-    "The thyroid",
-    "The kidneys",
-    "Hearing"
+    "1990",
+    "2010",
+    "1978"
    ],
    "alt": [],
-   "f": "The condition, NAION, is a rare stroke of the optic nerve that can cause vision loss.",
+   "f": "Status is lost when the same strain spreads continuously for 12 months or more.",
    "mc": 1,
-   "src": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential"
+   "src": "https://www.healio.com/news/pediatrics/20261117/us-loses-measles-elimination-status-paho-announces"
   },
   {
    "c": "news",
    "s": "Science",
    "d": 3,
-   "q": "The WMO says 2026 will be among the four warmest years. Which year still holds the record?",
-   "a": "2024",
+   "q": "Astronomers watched a giant star swallow a Sun-sized companion in which galaxy?",
+   "a": "Andromeda",
    "w": [
-    "2023",
-    "2025",
-    "2016"
+    "Large Magellanic Cloud",
+    "Triangulum",
+    "Milky Way"
    ],
    "alt": [],
-   "f": "2024 averaged about 1.55°C above pre-industrial levels; January–September 2026 was 1.47°C.",
+   "f": "The study, published in Nature, is the first direct observation of such an event.",
    "mc": 1,
-   "src": "https://wmo.int/resources/publication-series/state-of-climate-update-cop/state-of-climate-update-cop31"
-  },
-  {
-   "c": "news",
-   "s": "Health",
-   "d": 2,
-   "q": "Bayer's asundexian, newly approved in the US, is meant to prevent what?",
-   "a": "A repeat stroke",
-   "w": [
-    "Migraine attacks",
-    "Heart failure",
-    "Type 2 diabetes"
-   ],
-   "alt": [],
-   "f": "It is the first approved drug of its class, blocking a clotting protein called factor XIa.",
-   "mc": 1,
-   "src": "https://www.medscape.com/viewarticle/fda-approves-first-class-asundexian-stroke-prevention-2026a10016yr"
+   "src": "https://www.abc.net.au/news/science/2026-11-19/scientists-watch-red-giant-star-eat-another-the-size-of-our-sun/107394074"
   },
   {
    "c": "news",
    "s": "Stats",
    "d": 1,
-   "q": "David Jones will close 19 stores. How many stores did it have?",
-   "a": "38",
+   "q": "What was Australia's unemployment rate in October?",
+   "a": "4.9%",
    "w": [
-    "25",
-    "48",
-    "60"
+    "4.6%",
+    "4.7%",
+    "5.1%"
    ],
    "alt": [],
-   "f": "That is half the network, with closures by the end of December.",
+   "f": "About 44,000 jobs were lost in the month, mostly part-time.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/david-jones-to-close-stores/107372854"
-  },
-  {
-   "c": "news",
-   "s": "Stats",
-   "d": 3,
-   "q": "The Westpac–Melbourne Institute consumer sentiment index fell to what level in November?",
-   "a": "78.2",
-   "w": [
-    "82.7",
-    "74.6",
-    "88.1"
-   ],
-   "alt": [],
-   "f": "Any reading below 100 means pessimists outnumber optimists.",
-   "mc": 1,
-   "src": "https://www.westpac.com.au/news/money-matters/2026/11/festive-drear-consumer-mood-sinks-ahead-of-the-silly-season/amp/"
+   "src": "https://www.abs.gov.au/media-centre/media-releases/unemployment-rate-rises-49"
   },
   {
    "c": "news",
    "s": "Stats",
    "d": 2,
-   "q": "By roughly how much did the number of new investor home loans fall in the September quarter?",
-   "a": "About 30%",
+   "q": "By how much did the Wage Price Index rise over the year to September?",
+   "a": "3.5%",
    "w": [
-    "About 10%",
-    "About 18%",
-    "About 45%"
+    "3.2%",
+    "3.9%",
+    "4.3%"
    ],
    "alt": [],
-   "f": "The 30.6% fall was the biggest on record, almost double the previous record drop.",
+   "f": "The 1.1% quarterly rise was the biggest since late 2023.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/asx-markets-business-live-news-nov-11/107370848"
+   "src": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/wage-price-index-australia/latest-release"
   },
   {
    "c": "news",
    "s": "Stats",
    "d": 3,
-   "q": "China's trade surplus for January–October passed what mark for a second year running?",
-   "a": "US$1 trillion",
+   "q": "Nvidia's quarterly revenue, its first report since Jensen Huang's exit, was about how much?",
+   "a": "US$116 billion",
    "w": [
-    "US$500 billion",
-    "US$750 billion",
-    "US$2 trillion"
+    "US$58 billion",
+    "US$85 billion",
+    "US$250 billion"
    ],
    "alt": [],
-   "f": "October exports alone rose 35.2% on a year earlier.",
+   "f": "That was up 103% on a year earlier, and it guided to about US$130 billion next quarter.",
    "mc": 1,
-   "src": "https://www.itv.com/news/2026-11-10/chinas-trade-surplus-exceeds-1-trillion-for-a-2nd-straight-year"
+   "src": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
   },
   {
    "c": "news",
    "s": "Stats",
    "d": 3,
-   "q": "About how many lightning strikes did Energex record during Wednesday's south-east Queensland storms?",
-   "a": "120,000",
+   "q": "Queensland's new construction productivity code covers public projects worth more than what?",
+   "a": "$150 million",
    "w": [
-    "12,000",
+    "$50 million",
+    "$500 million",
+    "$1 billion"
+   ],
+   "alt": [],
+   "f": "It follows urgent recommendations from the inquiry into the CFMEU.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-11-17/qld-government-cfmeu-response/107394238"
+  },
+  {
+   "c": "news",
+   "s": "Stats",
+   "d": 2,
+   "q": "About how many directly employed David Jones staff lose their jobs in the first round of cuts?",
+   "a": "About 1,700",
+   "w": [
+    "About 600",
+    "About 3,500",
+    "About 6,000"
+   ],
+   "alt": [],
+   "f": "The figure is 1,689, and the union says only about one in ten was offered redeployment.",
+   "mc": 1,
+   "src": "https://www.mediaweek.com.au/1689-david-jones-staff-to-be-let-go-in-first-round-of-redundancies"
+  },
+  {
+   "c": "pol",
+   "s": "Politics",
+   "d": 2,
+   "q": "Tony Burke raised the cap on third-year working holiday visas to what?",
+   "a": "25,000",
+   "w": [
+    "5,000",
     "45,000",
-    "400,000"
+    "57,000"
    ],
    "alt": [],
-   "f": "More than 400 powerlines came down and Brisbane Airport recorded a 96 km/h gust.",
+   "f": "The cap announced in September was 5,000; places are still handed out by ballot.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/queensland-storms-power-outages/107374012"
-  },
-  {
-   "c": "pol",
-   "s": "Politics",
-   "d": 2,
-   "q": "COP31, where Chris Bowen is 'President of Negotiations', opened in which Turkish city?",
-   "a": "Antalya",
-   "w": [
-    "Istanbul",
-    "Ankara",
-    "Izmir"
-   ],
-   "alt": [],
-   "f": "The summit runs from 9 to 20 November under an Australia–Türkiye arrangement.",
-   "mc": 1,
-   "src": "https://unfccc.int/cop31/about"
+   "src": "https://www.thenewdaily.com.au/news/national/2026/11/17/backpacker-visa-rules-reversal"
   },
   {
    "c": "pol",
    "s": "Politics",
    "d": 1,
-   "q": "The federal government announced a new safety regulator with penalty powers for which industry?",
-   "a": "Frontier AI companies",
+   "q": "At APEC, Anthony Albanese planned to raise China's 55% tariff on which Australian export?",
+   "a": "Beef",
    "w": [
-    "Social media platforms",
-    "Crypto exchanges",
-    "Buy now, pay later lenders"
+    "Wine",
+    "Barley",
+    "Lobster"
    ],
    "alt": [],
-   "f": "Companies will have to allow independent testing of their models and report incidents.",
+   "f": "The tariff applies once China's annual import quota is filled, which happened in June.",
    "mc": 1,
-   "src": "https://www.computerweekly.com/news/366654658/Australia-plans-AI-safety-regulator-to-enforce-mandatory-safeguards"
-  },
-  {
-   "c": "pol",
-   "s": "Politics",
-   "d": 3,
-   "q": "Victorians vote on 28 November. Who is the Labor Premier going into the election?",
-   "a": "Ben Carroll",
-   "w": [
-    "Jacinta Allan",
-    "Jess Wilson",
-    "Tim Pallas"
-   ],
-   "alt": [],
-   "f": "Carroll replaced Jacinta Allan as Premier in July; Jess Wilson leads the Liberals.",
-   "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/victoria-election-blog-november-11/107371790"
+   "src": "https://www.abc.net.au/news/2026-11-18/federal-politics-live-blog-nov-18/107396066"
   },
   {
    "c": "pol",
    "s": "Politics",
    "d": 2,
-   "q": "Queensland is investigating possible fraud in a financial assistance scheme for whom?",
-   "a": "Victims of crime",
+   "q": "Jim Chalmers said December's mid-year budget update will include what?",
+   "a": "A substantial savings package",
    "w": [
-    "Flood-affected homeowners",
-    "First-home buyers",
-    "Small businesses"
+    "Income tax cuts",
+    "A GST increase",
+    "A new mining tax"
    ],
    "alt": [],
-   "f": "Payouts rose from about $100 million to nearly $244 million in 2024–25.",
+   "f": "He said it would cut enough, but not too much.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-09/queensland-victim-assistance-fraud/107365116"
+   "src": "https://www.abc.net.au/news/2026-11-17/chalmers-says-mid-year-budget-update-to-contain-cuts/107393416"
+  },
+  {
+   "c": "pol",
+   "s": "Politics",
+   "d": 3,
+   "q": "Victoria's Liberals pledged a youth bootcamp at a former prison near which town?",
+   "a": "Shepparton",
+   "w": [
+    "Bendigo",
+    "Ballarat",
+    "Mildura"
+   ],
+   "alt": [],
+   "f": "Labor's launch pledged to halve the planned surgery waiting list; Victorians vote on 28 November.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-11-15/labor-liberal-coalition-campaign-launches-health-youth-crime/107387220"
+  },
+  {
+   "c": "lng",
+   "s": "Words",
+   "d": 2,
+   "q": "What does MYEFO, the mid-year budget update, stand for?",
+   "a": "Mid-Year Economic and Fiscal Outlook",
+   "w": [
+    "Mid-Year Expenditure and Funding Overview",
+    "Ministerial Yearly Economic Forecast",
+    "Mid-Year Estimates of Federal Operations"
+   ],
+   "alt": [],
+   "f": "It updates the budget forecasts each December.",
+   "mc": 1,
+   "src": "https://www.abc.net.au/news/2026-11-17/chalmers-says-mid-year-budget-update-to-contain-cuts/107393416"
   },
   {
    "c": "lng",
    "s": "Words",
    "d": 1,
-   "q": "The COP31 host country now officially styles its name how?",
-   "a": "Türkiye",
+   "q": "The Trump–Xi–Putin meeting was called a 'trilateral'. How many parties does that mean?",
+   "a": "Three",
    "w": [
-    "Turkiya",
-    "Turkeye",
-    "Türkie"
+    "Two",
+    "Four",
+    "Five"
    ],
    "alt": [],
-   "f": "The UN adopted the spelling in 2022 at the country's request.",
+   "f": "It comes from Latin 'tri-' (three) and 'latus' (side).",
    "mc": 1,
-   "src": "https://unfccc.int/cop31/about"
+   "src": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html"
+  },
+  {
+   "c": "lng",
+   "s": "Words",
+   "d": 1,
+   "q": "The Leonid meteor shower, which peaked this week, is named after which constellation?",
+   "a": "Leo",
+   "w": [
+    "Lyra",
+    "Orion",
+    "Perseus"
+   ],
+   "alt": [],
+   "f": "Its meteors seem to come from Leo; the shower comes from debris of comet Tempel–Tuttle.",
+   "mc": 1,
+   "src": "https://www.space.com/leonid-meteor-shower"
   },
   {
    "c": "lng",
    "s": "Words",
    "d": 3,
-   "q": "Remembrance Day marks the 1918 Armistice. The word 'armistice' comes from Latin roots meaning what?",
-   "a": "Arms standing still",
+   "q": "Measles is 'endemic' in the US again. The word comes from Greek meaning what?",
+   "a": "In the people",
    "w": [
-    "Peace for ever",
-    "Laying down crowns",
-    "Sworn brothers"
+    "Against the body",
+    "Upon everyone",
+    "Through the air"
    ],
    "alt": [],
-   "f": "It joins 'arma' (arms) with '-stitium', a stopping or standing.",
+   "f": "Greek 'en' (in) plus 'dēmos' (people); 'epidemic' is 'upon the people'.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/remembrance-day-services-held-across-australia/107137596"
+   "src": "https://www.healio.com/news/pediatrics/20261117/us-loses-measles-elimination-status-paho-announces"
   },
   {
    "c": "lng",
    "s": "Words",
-   "d": 2,
-   "q": "David Jones is in receivership. A receiver is usually appointed by whom?",
-   "a": "A secured lender",
+   "d": 1,
+   "q": "In Anthropic's record share listing, what does IPO stand for?",
+   "a": "Initial public offering",
    "w": [
-    "The company's shareholders",
-    "The stock exchange",
-    "The federal Treasurer"
+    "International public offering",
+    "Initial private offering",
+    "Investor purchase order"
    ],
    "alt": [],
-   "f": "Receivers FTI Consulting are acting for the lender Hilco.",
+   "f": "An IPO is when a company first sells its shares to the public.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/david-jones-to-close-stores/107372854"
-  },
-  {
-   "c": "lng",
-   "s": "Words",
-   "d": 2,
-   "q": "This week's storms were 'supercells'. What sets a supercell apart from an ordinary thunderstorm?",
-   "a": "A rotating updraft",
-   "w": [
-    "Hail bigger than golf balls",
-    "Winds above 150 km/h",
-    "Lightning every second"
-   ],
-   "alt": [],
-   "f": "The rotating updraft, called a mesocyclone, lets supercells last for hours.",
-   "mc": 1,
-   "src": "http://www.bom.gov.au/weather-and-climate/severe-weather-knowledge-centre/thunderstorms.shtml"
-  },
-  {
-   "c": "lng",
-   "s": "Words",
-   "d": 3,
-   "q": "Gadi Eisenkot was handed the 'mandate' to form a government. The word comes from a Latin verb meaning what?",
-   "a": "To entrust or command",
-   "w": [
-    "To unite",
-    "To elect",
-    "To speak for"
-   ],
-   "alt": [],
-   "f": "Latin 'mandare' is often explained as 'to give into the hand'.",
-   "mc": 1,
-   "src": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government"
+   "src": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
   },
   {
    "c": "mat",
    "s": "Maths",
    "d": 1,
-   "q": "David Jones is closing 19 of its 38 stores. What percentage is that?",
-   "a": "50",
+   "q": "The Kangaroos beat New Zealand 32–12 in the World Cup final. What was the winning margin?",
+   "a": "20",
    "w": [
-    "38",
-    "45",
-    "60"
+    "18",
+    "22",
+    "24"
+   ],
+   "alt": [],
+   "f": "32 − 12 = 20.",
+   "mc": 0,
+   "src": "https://www.nrl.com/news/2026/11/15/kangaroos-stand-tall-to-make-it-a-world-cup-four-peat/"
+  },
+  {
+   "c": "mat",
+   "s": "Maths",
+   "d": 1,
+   "q": "The third-year backpacker visa cap went from 5,000 to 25,000. How many times bigger is it?",
+   "a": "5",
+   "w": [
+    "4",
+    "6",
+    "20"
    ],
    "alt": [
-    "50%"
+    "five",
+    "5 times"
    ],
-   "f": "19 ÷ 38 = 0.5, exactly half.",
+   "f": "25,000 ÷ 5,000 = 5.",
    "mc": 0,
-   "src": "https://www.abc.net.au/news/2026-11-11/david-jones-to-close-stores/107372854"
-  },
-  {
-   "c": "mat",
-   "s": "Maths",
-   "d": 1,
-   "q": "The Armistice was signed in 1918. How many years ago was that, as of this Remembrance Day?",
-   "a": "108",
-   "w": [
-    "98",
-    "106",
-    "118"
-   ],
-   "alt": [],
-   "f": "2026 − 1918 = 108.",
-   "mc": 0,
-   "src": "https://www.abc.net.au/news/2026-11-11/remembrance-day-services-held-across-australia/107137596"
+   "src": "https://www.thenewdaily.com.au/news/national/2026/11/17/backpacker-visa-rules-reversal"
   },
   {
    "c": "mat",
    "s": "Maths",
    "d": 2,
-   "q": "Tasmanian MPs are getting a 22% pay rise. How many dollars is 22% of $140,000?",
-   "a": "30800",
+   "q": "Anthropic shares were priced at $83 and opened at $111.50. How many dollars higher was the open?",
+   "a": "28.50",
    "w": [
-    "22000",
-    "28000",
-    "32200"
+    "27.50",
+    "28.00",
+    "38.50"
    ],
    "alt": [
-    "30,800",
-    "$30800",
-    "$30,800"
+    "28.5",
+    "$28.50",
+    "$28.5"
    ],
-   "f": "10% is $14,000, so 20% is $28,000, plus 2% ($2,800) makes $30,800.",
+   "f": "111.50 − 83 = 28.50, a jump of about 34%.",
    "mc": 0,
-   "src": "https://www.abc.net.au/news/2026-11-09/tasmanian-politicians-22-per-cent-pay-rise/107364690"
+   "src": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion"
   },
   {
    "c": "mat",
    "s": "Maths",
    "d": 3,
-   "q": "In the asundexian trial, repeat strokes fell from 8.4% on placebo to 6.2%. How many percentage points is that?",
-   "a": "2.2",
+   "q": "Wages rose 1.1% in the September quarter. How many dollars is 1.1% of an $1,800 weekly wage?",
+   "a": "19.80",
    "w": [
-    "1.2",
-    "2.4",
-    "3.2"
+    "18.00",
+    "19.10",
+    "21.80"
    ],
    "alt": [
-    "2.2%"
+    "19.8",
+    "$19.80",
+    "$19.8"
    ],
-   "f": "8.4 − 6.2 = 2.2, which is roughly a 26% relative reduction.",
+   "f": "1% is $18 and 0.1% is $1.80, so $19.80.",
    "mc": 0,
-   "src": "https://www.medscape.com/viewarticle/fda-approves-first-class-asundexian-stroke-prevention-2026a10016yr"
-  },
-  {
-   "c": "spo",
-   "s": "Sport",
-   "d": 1,
-   "q": "The Kangaroos play which team in Sunday's Rugby League World Cup final at Suncorp Stadium?",
-   "a": "New Zealand",
-   "w": [
-    "Tonga",
-    "Samoa",
-    "England"
-   ],
-   "alt": [],
-   "f": "Australia beat Samoa 44–12 in their semi-final, with a Reece Walsh hat-trick.",
-   "mc": 1,
-   "src": "https://www.nrl.com/news/2026/11/08/clinical-kangaroos-sink-samoa-to-storm-into-cup-final/"
-  },
-  {
-   "c": "spo",
-   "s": "Sport",
-   "d": 1,
-   "q": "Who won Formula 1's rain-hit São Paulo Grand Prix?",
-   "a": "Lando Norris",
-   "w": [
-    "Max Verstappen",
-    "Oscar Piastri",
-    "Kimi Antonelli"
-   ],
-   "alt": [],
-   "f": "Verstappen was second; Piastri climbed from 10th on the grid to finish sixth.",
-   "mc": 1,
-   "src": "https://www.espn.com/f1/story/_/id/50389075/lando-norris-sao-paulo-grand-prix-brazil-formula-1"
-  },
-  {
-   "c": "spo",
-   "s": "Sport",
-   "d": 3,
-   "q": "Which England replacement scored two tries in two minutes in the 45–22 win over the Wallabies?",
-   "a": "Henry Pollock",
-   "w": [
-    "Marcus Smith",
-    "Ollie Chessum",
-    "Tom Roebuck"
-   ],
-   "alt": [],
-   "f": "It was England's highest score ever against Australia.",
-   "mc": 1,
-   "src": "https://www.espn.com/rugby/story/_/id/50421273/england-australia-nations-championship-rugby-result"
+   "src": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/wage-price-index-australia/latest-release"
   },
   {
    "c": "spo",
    "s": "Sport",
    "d": 2,
-   "q": "Which batter was left out of Australia's Test squad for the home series against New Zealand?",
-   "a": "Marnus Labuschagne",
+   "q": "The Kangaroos' win at Suncorp Stadium was their how-manyth straight Rugby League World Cup?",
+   "a": "Fourth",
    "w": [
-    "Steve Smith",
-    "Travis Head",
-    "Usman Khawaja"
+    "Second",
+    "Third",
+    "Fifth"
    ],
    "alt": [],
-   "f": "Chair of selectors George Bailey said a recall is still possible.",
+   "f": "The Jillaroos also won a fourth straight title, beating the Kiwi Ferns 34–10.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-09/cricket-marnus-labuschagne-axed-from-australian-test-squad/107363356"
+   "src": "https://www.nrl.com/news/2026/11/15/kangaroos-stand-tall-to-make-it-a-world-cup-four-peat/"
+  },
+  {
+   "c": "spo",
+   "s": "Sport",
+   "d": 1,
+   "q": "The Wallabies lost 15–12 at Murrayfield to which team?",
+   "a": "Scotland",
+   "w": [
+    "Ireland",
+    "Wales",
+    "France"
+   ],
+   "alt": [],
+   "f": "A late Max Jorgensen try wasn't enough; Wales are next on the tour.",
+   "mc": 1,
+   "src": "https://www.rugby.com.au/news/scotland-overcome-wallabies-in-murrayfield-armwrestle-20261115"
+  },
+  {
+   "c": "spo",
+   "s": "Sport",
+   "d": 2,
+   "q": "England clinched their ODI series win over Australia at which ground?",
+   "a": "Bellerive Oval",
+   "w": [
+    "Adelaide Oval",
+    "The Gabba",
+    "Perth Stadium"
+   ],
+   "alt": [],
+   "f": "Ben Duckett's century set up a 97-run win and a 2–1 series result.",
+   "mc": 1,
+   "src": "https://www.skysports.com/cricket/news/13613516/england-cruise-to-odi-series-win-over-australia-as-ben-duckett-scores-century-and-sonny-baker-takes-four-wickets"
+  },
+  {
+   "c": "spo",
+   "s": "Sport",
+   "d": 3,
+   "q": "Who won golf's DP World Tour Championship in Dubai?",
+   "a": "Tyrrell Hatton",
+   "w": [
+    "Rory McIlroy",
+    "Tommy Fleetwood",
+    "Matt Fitzpatrick"
+   ],
+   "alt": [],
+   "f": "Runner-up McIlroy still won an eighth Race to Dubai title, equalling Colin Montgomerie.",
+   "mc": 1,
+   "src": "https://www.thenationalnews.com/sport/2026/11/15/tyrrell-hatton-wins-maiden-dp-world-tour-championship/"
   },
   {
    "c": "mus",
    "s": "Music",
    "d": 1,
-   "q": "Dolly Parton's final recorded vocal features in a duet on the new album by which band?",
-   "a": "U2",
+   "q": "Which act won seven ARIA Awards, including Album of the Year?",
+   "a": "Tame Impala",
    "w": [
-    "Coldplay",
-    "Foo Fighters",
-    "Kings of Leon"
+    "Genesis Owusu",
+    "DMA'S",
+    "G Flip"
    ],
    "alt": [],
-   "f": "The track 'Torn' closes the album 'Carnaval de Luz', released on Friday.",
+   "f": "Kevin Parker's 'Deadbeat' took Album of the Year at the 40th ARIAs in Sydney.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-13/dolly-parton-final-recording-u2-duet-torn/107379300"
+   "src": "https://www.billboard.com/music/awards/tame-impala-dominate-2026-aria-awards-1236384668/"
   },
   {
    "c": "mus",
    "s": "Music",
    "d": 3,
-   "q": "Which song extended its record run at No. 1 on the US Billboard Hot 100 to 27 weeks?",
-   "a": "Choosin' Texas",
+   "q": "Who won the ARIA for Michael Gudinski Breakthrough Artist?",
+   "a": "Ecca Vandal",
    "w": [
-    "Old Town Road",
-    "A Bar Song (Tipsy)",
-    "Last Night"
+    "Royel Otis",
+    "Ruel",
+    "Mia Wray"
    ],
    "alt": [],
-   "f": "Ella Langley's hit holds the record for the most weeks at No. 1.",
+   "f": "She won four ARIAs on the night.",
    "mc": 1,
-   "src": "https://www.billboard.com/lists/ella-langley-choosin-texas-hot-100-number-one-27-weeks/"
+   "src": "https://www.thenote.com.au/news/2026-aria-award-winners"
   },
   {
    "c": "mus",
    "s": "Music",
    "d": 2,
-   "q": "Which rock star paid tribute to Beaconsfield survivor Todd Russell at a Sydney concert?",
-   "a": "Dave Grohl",
+   "q": "Who set a CMA Awards record with six wins in one night?",
+   "a": "Ella Langley",
    "w": [
-    "Eddie Vedder",
-    "Bruce Springsteen",
-    "Jimmy Barnes"
+    "Lainey Wilson",
+    "Miranda Lambert",
+    "Kacey Musgraves"
    ],
    "alt": [],
-   "f": "Grohl wrote 'Ballad of the Beaconsfield Miners' after the 2006 rescue.",
+   "f": "Her wins included Entertainer of the Year and Song of the Year for 'Choosin' Texas'.",
    "mc": 1,
-   "src": "https://www.abc.net.au/news/2026-11-11/foo-fighters-grohl-tribute-for-todd-russell/107372582"
-  },
-  {
-   "c": "fil",
-   "s": "Pop culture",
-   "d": 2,
-   "q": "Which film topped the US box office with the biggest opening ever for a live-action foreign-language film?",
-   "a": "Godzilla Minus Zero",
-   "w": [
-    "Ramayana: Rise of a Legend",
-    "The Cat in the Hat",
-    "Crouching Tiger, Hidden Dragon"
-   ],
-   "alt": [],
-   "f": "It took US$30.5 million, beating the record set by 'Hero' in 2002.",
-   "mc": 1,
-   "src": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-cat-in-the-hat-fizzles-1236942363/"
+   "src": "https://variety.com/2026/music/news/cma-awards-winners-2026-complete-list-1236952628/"
   },
   {
    "c": "fil",
    "s": "Pop culture",
    "d": 3,
-   "q": "Which film was No. 1 at the Australian box office last weekend?",
-   "a": "Ramayana: Rise of a Legend",
+   "q": "GTA VI's Metacritic score of 99 equals the record held by which game?",
+   "a": "The Legend of Zelda: Ocarina of Time",
    "w": [
-    "Godzilla Minus Zero",
-    "The Cat in the Hat",
-    "Zootopia 2"
+    "Red Dead Redemption 2",
+    "Super Mario Galaxy",
+    "Grand Theft Auto IV"
    ],
    "alt": [],
-   "f": "It was the first time foreign-language films held the top two spots here.",
+   "f": "The game launched on PS5 and Xbox Series X|S on 19 November.",
    "mc": 1,
-   "src": "https://www.mediaweek.com.au/ramayana-and-godzilla-minus-zero-take-box-office-top-two-in-a-foreign-language-first"
+   "src": "https://www.forbes.com/sites/paultassi/2026/11/18/the-gta-6-metacritic-review-score-is-in-and-ties-an-all-time-record/"
   },
   {
    "c": "fil",
    "s": "Pop culture",
-   "d": 1,
-   "q": "Physical copies of which video game reached shops this week, still locked until its 19 November launch?",
-   "a": "Grand Theft Auto VI",
+   "d": 2,
+   "q": "Johnny Depp had his first US No. 1 opening in eight years with which film?",
+   "a": "Ebenezer",
    "w": [
-    "Red Dead Redemption 3",
-    "The Elder Scrolls VI",
-    "Call of Duty: Black Ops 7"
+    "Scrooged",
+    "Marley",
+    "Jacob's Ghost"
    ],
    "alt": [],
-   "f": "Digital buyers could start preloading the game on 10 November.",
+   "f": "It took an estimated US$19 million, ahead of 'The Cat in the Hat'.",
    "mc": 1,
-   "src": "https://www.gamespot.com/articles/gta-6-preloading-start-date-and-what-to-know-about-digital-and-physical-copies/"
+   "src": "https://www.wafb.com/2026/11/16/johnny-depp-film-ebenezer-gets-actor-first-no-1-opening-8-years/"
+  },
+  {
+   "c": "fil",
+   "s": "Pop culture",
+   "d": 2,
+   "q": "In 'Sunrise on the Reaping', Sydney-born Joseph Zada plays the young version of which Hunger Games character?",
+   "a": "Haymitch",
+   "w": [
+    "Peeta",
+    "Finnick",
+    "Snow"
+   ],
+   "alt": [],
+   "f": "Woody Harrelson played the older Haymitch in the earlier films.",
+   "mc": 1,
+   "src": "https://au.variety.com/2026/film/features/joseph-zada-interview-hunger-games-indigenous-ancestry-42659/"
   }
  ]
 }
